@@ -1,6 +1,11 @@
 import { articles } from '@/data/mock-data';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: "Tin tức",
+};
 
 export default function News() {
   return (
