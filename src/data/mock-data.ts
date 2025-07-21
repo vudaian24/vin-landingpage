@@ -38,7 +38,9 @@ export const greenCars = [
     seats: '4 chỗ',
     range: '>170 km/lần sạc',
     power: '20 kw',
+    canHover: true,
     image: '/images/cars/vinfast-minio.png',
+    imageHover: '/images/cars/vinfast-minio-hover.jpg',
   },
   {
     name: 'VINFAST HERIO GREEN',
@@ -46,7 +48,9 @@ export const greenCars = [
     seats: '5 chỗ',
     range: '326 km/lần sạc',
     power: '100 kw',
+    canHover: true,
     image: '/images/cars/vinfast-herio.png',
+    imageHover: '/images/cars/vinfast-herio-hover.jpg',
   },
   {
     name: 'VINFAST NERIO GREEN',
@@ -54,7 +58,9 @@ export const greenCars = [
     seats: '5 chỗ',
     range: '318,6 km/lần sạc',
     power: '110 kw',
+    canHover: true,
     image: '/images/cars/vinfast-nerio.png',
+    imageHover: '/images/cars/vinfast-nerio-hover.jpg',
   },
   {
     name: 'VINFAST LIMO GREEN',
@@ -62,7 +68,9 @@ export const greenCars = [
     seats: '7 chỗ',
     range: '450 km/lần sạc',
     power: '150 kw',
+    canHover: true,
     image: '/images/cars/vinfast-limo.png',
+    imageHover: '/images/cars/vinfast-limo-hover.jpg',
   },
 ]
 

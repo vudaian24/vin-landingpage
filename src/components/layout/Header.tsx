@@ -15,12 +15,7 @@ const navItems = [
     label: 'Ô tô VinFast',
     href: '/san-pham/o-to-vinfast',
     subMenuItems: [
-      { label: 'VinFast VF 3', href: '/vinfast-vf3' },
-      { label: 'VinFast VF 5', href: '/vinfast-vf5' },
-      { label: 'VinFast VF 6', href: '/vinfast-vf6' },
-      { label: 'VinFast VF 7', href: '/vinfast-vf7' },
-      { label: 'VinFast VF 8', href: '/vinfast-vf8' },
-      { label: 'VinFast VF 9', href: '/vinfast-vf9' },
+      { label: 'VinFast VF 3', href: '/o-to/vinfast-vf3' },
     ],
   },
   {
