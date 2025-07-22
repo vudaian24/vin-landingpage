@@ -17,8 +17,8 @@ export default function PromotionSection() {
         </div>
         <div className="w-full lg:w-auto">
           <ButtonCustom
-            href="tel:0968225709"
-            label="Hotline: 0968225709"
+            href="tel:0783382001"
+            label="Hotline: 0783382001"
             variant="primary"
             className="font-bold w-full lg:w-auto text-center px-6 py-2 text-[14px]"
           />

@@ -20,8 +20,8 @@ export default function TraiNghiemKhachHang() {
           Cảm ơn Quý khách hàng đã tin tưởng đồng hành cùng VinFast.
         </p>
         <ButtonCustom
-          href="tel:0968225709"
-          label="0968225709"
+          href="tel:0783382001"
+          label="0783382001"
           variant="primary"
           icon={<Phone className="w-4 h-4 mr-1" />}
           className="font-bold w-fit text-center px-6 py-2 text-base mt-5"
