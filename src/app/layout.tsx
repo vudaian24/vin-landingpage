@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header"
 import Footer from "@/components/layout/Footer"
 import BackToTop from "@/components/ui/BackToTop"
 import PromotionSection from "@/components/layout/PromotionSection"
+import FloatingContact from "@/components/layout/FloatingContact"
 
 const fontSans = Noto_Sans({
   subsets: ['latin'],
@@ -37,6 +38,7 @@ export default function RootLayout({
         <PromotionSection />
         <Footer />
         <BackToTop />
+        <FloatingContact />
       </body>
     </html>
   );
