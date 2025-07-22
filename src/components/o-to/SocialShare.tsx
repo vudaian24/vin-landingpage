@@ -10,7 +10,6 @@ import {
 
 const shareUrl = 'https://vinfastautolongbien.vn/o-to/vinfast-minio-green/';
 const shareTitle = 'VinFast Minio Green';
-const shareImage = 'https://vinfastautolongbien.vn/wp-content/uploads/2025/03/vinfast-minio-green.png';
 
 export default function SocialShare() {
   return (

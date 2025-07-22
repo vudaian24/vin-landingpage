@@ -58,7 +58,7 @@ export default function Header() {
           'fixed top-0 left-0 right-0 z-40 w-full bg-white transition-all duration-300',
           hasScrolled
             ? 'shadow-[1px_1px_10px_rgba(0,0,0,0.15)] animate-fade-down animate-once animate-ease-linear'
-            : 'shadow-sm'
+            : ''
         )}
       >
         <div className="max-w-[1080px] mx-auto flex items-center justify-between px-4 py-1">
@@ -115,7 +115,7 @@ export default function Header() {
                       )}
                     </Link>
                     {item.subMenuItems && hoveredItem === item.label && (
-                      <div className="absolute top-full left-0 bg-white shadow-lg border border-gray-200 rounded-md py-2 min-w-[200px] z-50">
+                      <div className="absolute top-full left-0 bg-white shadow-lg border border-gray-200 rounded-md py-2 min-w-[200px] z-50 before:absolute before:top-[-6px] before:left-9 before:w-3 before:h-3 before:bg-white before:rotate-45 before:content-[''] before:border-l before:border-t before:border-gray-200">
                         {item.subMenuItems.map((subItem) => (
                           <Link
                             key={subItem.href}
