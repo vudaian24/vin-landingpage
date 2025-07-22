@@ -3,7 +3,7 @@ import ButtonCustom from "../ui/ButtonCustom";
 export default function PromotionSection() {
   return (
     <div className="bg-[#e0e0e0] min-h-[185px] flex items-center">
-      <div className="mx-auto max-w-[1080px] w-full px-4 py-6 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+      <div className="mx-auto max-w-[1080px] w-full px-4 py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
         <div className="w-full lg:w-2/3">
           <h2 className="text-[20px] lg:text-[24px] font-bold text-[#2b2b2b]">
             KHUYẾN MÃI & ƯU ĐÃI
@@ -15,12 +15,12 @@ export default function PromotionSection() {
             </em>
           </p>
         </div>
-        <div className="w-full lg:w-auto">
+        <div className="w-full md:w-auto">
           <ButtonCustom
             href="tel:0968225709"
             label="Hotline: 0968225709"
             variant="primary"
-            className="font-bold w-full lg:w-auto text-center px-6 py-2 text-[14px]"
+            className="font-bold w-full whitespace-nowrap lg:w-auto text-center px-6 py-2 text-[14px]"
           />
         </div>
       </div>
