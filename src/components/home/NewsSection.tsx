@@ -45,7 +45,7 @@ const NewsSection = () => {
 
         <p className="text-gray-600 mb-6 max-w-4xl">
           Những mẫu xe VinFast hoàn toàn mới, sự kết hợp tinh hoa giữa công nghệ tối tân và thiết kế sang trọng.
-          Cập nhật thông tin và bảng giá sản phẩm mới nhất từ VinFast Long Biên - Hà Nội.
+          Cập nhật thông tin và bảng giá sản phẩm mới nhất từ VinFast Thăng Long - Hà Nội.
         </p>
 
         <div className="flex flex-col lg:flex-row items-stretch gap-6">

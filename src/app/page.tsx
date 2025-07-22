@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: "VinFast Long Biên",
+  title: "VinFast Thăng Long",
 };
 
 export default function Home() {

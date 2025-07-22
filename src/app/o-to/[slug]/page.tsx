@@ -40,7 +40,7 @@ export default function ProductDetailPage() {
               description="BẢNG GIÁ XE VINFAST MINIO GREEN"
               range="170 km"
               power="20 kW"
-              hotline="0968225709"
+              hotline="0783382001"
             />
           </div>
         </div>

@@ -44,8 +44,8 @@ export const ProductInfo = ({
           className="font-bold w-fit text-center px-6 py-2 text-[14px]"
         />
         <ButtonCustom
-          href="tel:0968225709"
-          label="0968225709"
+          href="tel:0783382001"
+          label="0783382001"
           variant="outline"
           icon={<PhoneIcon className="w-4 h-4 mr-1" />}
           className="font-bold w-fit text-center px-6 py-2 text-[14px]"
