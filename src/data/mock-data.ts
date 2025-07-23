@@ -78,17 +78,17 @@ export const articles = [
   {
     title: 'Hướng dẫn sử dụng trạm sạc',
     image: '/images/news/video-thumb-1.jpg',
-    link: '#',
+    link: '/bai-viet/huong-dan-su-dung-tram-sac',
     video: true,
   },
   {
     title: 'Pin và trạm sạc ô tô điện',
     image: '/images/news/video-thumb-2.jpg',
-    link: '#',
+    link: '/bai-viet/pin-va-tram-sac-o-to-dien',
   },
   {
     title: 'Thiết bị sạc di động',
     image: '/images/news/video-thumb-3.jpg',
-    link: '#',
+    link: '/bai-viet/thiet-bi-sac-di-dong',
   },
 ]; 
