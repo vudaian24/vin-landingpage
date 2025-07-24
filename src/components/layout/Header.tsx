@@ -22,7 +22,7 @@ const navItems = [
     label: 'VinFast Green',
     href: '/san-pham/vinfast-green',
     subMenuItems: [
-      { label: 'VinFast Mini Green', href: '/vinfast-mini-green' },
+      { label: 'VinFast Mini Green', href: '/o-to/vinfast-mini-green' },
     ],
   },
   { label: 'Pin và trạm sạc', href: '/pin-va-tram-sac' },
