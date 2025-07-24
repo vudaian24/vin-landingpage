@@ -6,18 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Oto",
 };
-
-interface ProductDetailPageProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default async function ProductDetailPage({
-  params,
-}: ProductDetailPageProps) {
-  const { slug } = await Promise.resolve(params);
-
+export default async function ProductDetailPage() {
   const carVariants = [
     { name: 'Đỏ', image: 'https://vinfastautolongbien.vn/wp-content/uploads/2023/12/vinfast-231207_0025_vf-9.jpg' },
     { name: 'Xanh', image: 'https://vinfastautolongbien.vn/wp-content/uploads/2023/12/vinfast-231207_0024_vf-9.jpg' },
