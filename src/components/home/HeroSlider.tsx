@@ -4,18 +4,13 @@ import { useEffect, useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
 
-const images = [
-  {
-    src: '/images/slider-home/banner-vinfast-vf8-24726-pc-08-1536x496.jpg',
-    alt: 'VinFast Background',
-  },
-  {
-    src: '/images/slider-home/vinfast-vf9-241212-banner-pc01-2048x661.jpg',
-    alt: 'Banner VF8',
-  },
-]
+interface Props {
+  images: { src: string; alt: string }[]
+}
 
-export default function HeroSlider() {
+export default function HeroSlider(
+  { images }: Props
+) {
   const [current, setCurrent] = useState(0)
   const [prev, setPrev] = useState<number | null>(null)
   const [direction, setDirection] = useState<'left' | 'right'>('right')

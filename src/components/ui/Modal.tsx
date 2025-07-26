@@ -30,7 +30,8 @@ export default function Modal({ open, onClose, children }: ModalProps) {
 
       {/* Modal content */}
       <div
-        className="fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg max-w-3xl w-full overflow-hidden"
+        className="fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg max-w-3xl w-full overflow-hidden animate-modal"
+
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}

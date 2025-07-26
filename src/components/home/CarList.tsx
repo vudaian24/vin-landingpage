@@ -15,13 +15,14 @@ export default function CarList() {
             key={index}
             className="px-[15px] pb-[30px] flex flex-col items-center text-center"
           >
-            <Image
-              src={car.image}
-              alt={car.name}
-              width={300}
-              height={160}
-              className="object-contain mb-4"
-            />
+            <div className="relative w-[300px] h-[160px] mb-4">
+              <Image
+                src={car.image}
+                alt={car.name}
+                fill
+                className="object-contain"
+              />
+            </div>
             <div className='flex flex-col items-start w-full px-5'>
               <h3 className="font-bold text-lg">{car.name}</h3>
               <p className="text-[#1464f4] font-semibold text-sm mt-1 mb-4">
