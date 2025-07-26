@@ -15,14 +15,14 @@ const navItems = [
     label: 'Ô tô VinFast',
     href: '/san-pham/o-to-vinfast',
     subMenuItems: [
-      { label: 'VinFast VF 3', href: '/o-to/vinfast-vf3' },
+      { label: 'VinFast VF 9', href: '/o-to/vinfast-vf-9' },
     ],
   },
   {
     label: 'VinFast Green',
     href: '/san-pham/vinfast-green',
     subMenuItems: [
-      { label: 'VinFast Mini Green', href: '/o-to/vinfast-mini-green' },
+      { label: 'VinFast Mini Green', href: '/o-to/vinfast-minio-green' },
     ],
   },
   { label: 'Pin và trạm sạc', href: '/pin-va-tram-sac' },

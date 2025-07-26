@@ -36,7 +36,7 @@ export default function Modal({ open, onClose, children }: ModalProps) {
       >
         {/* Close Button */}
         <button
-          className="absolute top-2 right-2 text-gray-600 hover:text-black z-50"
+          className="absolute top-2 right-2 text-gray-600 hover:text-black z-50 cursor-pointer"
           onClick={onClose}
         >
           <X size={20} />

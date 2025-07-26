@@ -1,3 +1,4 @@
+import VideoModal from "@/components/pin-va-tram-sac/VideoModal";
 import { articles } from "@/data/mock-data";
 import { Facebook, Music2, Youtube } from "lucide-react";
 import { Metadata } from "next";
@@ -12,48 +13,51 @@ export default function BatteryAndChargingStations() {
   return (
     <div className="w-full">
       <div
-        className="w-full min-h-[550px] bg-cover bg-center text-white flex items-center justify-center"
+        className="w-full min-h-[550px] bg-cover bg-center text-white flex items-center justify-center relative"
         style={{ backgroundImage: "url('/images/vinfast-pin-va-sac-bg.jpg')" }}
       >
         <div className="max-w-[1300px] w-full px-[10px] font-bold text-white">
           <p className="text-[14px]">PIN VÀ TRẠM SẠC XE ĐIỆN</p>
-          <h1 className="text-[70px]">VINFAST</h1>
+          <h1 className="text-[70px] !text-white">VINFAST</h1>
         </div>
+        <VideoModal />
       </div>
       <FollowIcons />
 
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between max-w-[1080px] mx-auto gap-[30px] px-4 pb-[60px]">
         {articles.map((article, index) => (
-          <div key={index} className="flex flex-col items-center bg-white rounded-lg overflow-hidden">
-            <div className="relative w-[300px] h-[200px] md:w-[220px] lg:w-[310px] md:h-[160px] lg:h-[200px]">
-              <Image
-                src={article.image}
-                alt={article.title}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
-              />
-              {article.video && (
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <button className="group w-10 h-10 rounded-full border-2 border-white flex items-center justify-center transition-colors duration-300 bg-transparent bg-opacity-40 hover:bg-[#1464f4] hover:border-[#1464f4]"> {/* Added bg-black opacity for better visibility */}
-                    <svg
-                      className="w-5 h-5 text-white group-hover:text-white transition-colors duration-300"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </button>
-                </div>
-              )}
+          <Link key={index} href={article.link}>
+            <div key={index} className="flex flex-col items-center bg-white rounded-lg overflow-hidden">
+              <div className="relative w-[300px] h-[200px] md:w-[220px] lg:w-[310px] md:h-[160px] lg:h-[200px]">
+                <Image
+                  src={article.image}
+                  alt={article.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
+                {article.video && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <button className="group w-10 h-10 rounded-full border-2 border-white flex items-center justify-center transition-colors duration-300 bg-transparent bg-opacity-40 hover:bg-[#1464f4] hover:border-[#1464f4]"> {/* Added bg-black opacity for better visibility */}
+                      <svg
+                        className="w-5 h-5 text-white group-hover:text-white transition-colors duration-300"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </button>
+                  </div>
+                )}
+              </div>
+              <div className="block w-full text-center py-4 px-2">
+                <h3 className="text-[17px] text-[#333333] font-medium hover:text-[#00adef] transition-colors duration-300">
+                  {article.title}
+                  <div className="mx-auto mt-2 w-[30px] h-[2px] bg-[rgba(0,0,0,0.1)]"></div>
+                </h3>
+              </div>
             </div>
-            <Link href={article.link} className="block w-full text-center py-4 px-2">
-              <h3 className="text-[17px] text-[#333333] font-medium hover:text-[#00adef] transition-colors duration-300">
-                {article.title}
-                <div className="mx-auto mt-2 w-[30px] h-[2px] bg-[rgba(0,0,0,0.1)]"></div>
-              </h3>
-            </Link>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

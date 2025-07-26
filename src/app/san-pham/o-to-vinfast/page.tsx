@@ -35,6 +35,7 @@ export default function OtoVinFast() {
                 name={product.name}
                 price={product.price}
                 imageUrl={product.image}
+                link={product.link}
               />
             ))}
           </div>

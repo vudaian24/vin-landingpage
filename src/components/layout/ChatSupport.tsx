@@ -46,20 +46,20 @@ export default function ChatSupport() {
   }
 
   return (
-    <div className={`fixed bottom-0 chat-content-animate right-4 ${isCollapsed ? "w-24" : "w-80"}  rounded-md shadow-lg border border-gray-300 bg-white text-sm font-sans overflow-hidden`}>
+    <div className={`fixed bottom-0 chat-content-animate right-3 ${!isCollapsed ? "w-24" : "w-80"} shadow-lg border border-gray-300 bg-white text-sm font-sans overflow-hidden`}>
       {/* Header */}
-      <div className={`bg-gray-800 text-white ${isCollapsed ? "px-1" : "px-4"} py-1 flex items-center justify-between`}>
-        <h1 className="text-base font-medium">Hỗ trợ</h1>
+      <div className={`bg-gray-800 text-white ${!isCollapsed ? "px-1" : "px-4"} py-1 flex items-center justify-between`}>
+        <h1 className="text-base font-medium !text-white">Hỗ trợ</h1>
         <button
           onClick={() => setIsCollapsed((prev) => !prev)}
-          className="text-white hover:bg-gray-700 ml-1 rounded"
+          className="text-white hover:bg-gray-700 ml-1 rounded cusor-pointer"
         >
-          <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="h-5 w-5 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </div>
-      {!isCollapsed && (
+      {isCollapsed && (
         <div className="flex flex-col">
           <div className="bg-green-50 px-4 py-1 border-b">
             <div className="flex items-center gap-2">
