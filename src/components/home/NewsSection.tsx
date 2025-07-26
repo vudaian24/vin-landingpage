@@ -1,11 +1,13 @@
 'use client'
 
-import { PlayCircle } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import ButtonCustom from '../ui/ButtonCustom'
+import Modal from '../ui/Modal'
+import { useState } from 'react'
 
 const NewsSection = () => {
+  const [isOpen, setIsOpen] = useState(false)
   const mainVideo = {
     image: '/images/news/vinfast-news.jpg',
     youtubeLink: 'https://www.youtube.com/watch?v=xxxxxxxxxxx',
@@ -59,7 +61,7 @@ const NewsSection = () => {
               className="w-full h-full object-cover rounded"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <button className="group w-[60px] h-[60px] rounded-full border-2 border-white flex items-center justify-center transition-colors duration-300 hover:bg-[#1464f4] hover:border-[#1464f4]">
+              <button onClick={() => setIsOpen(true)} className="group w-[60px] h-[60px] rounded-full cursor-pointer border-2 border-white flex items-center justify-center transition-colors duration-300 hover:bg-[#1464f4] hover:border-[#1464f4]">
                 <svg
                   className="w-8 h-8 text-white group-hover:text-white transition-colors duration-300"
                   fill="currentColor"
@@ -102,6 +104,18 @@ const NewsSection = () => {
           </div>
         </div>
       </div>
+      <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+        <iframe
+          width="100%"
+          height="450"
+          src="https://www.youtube.com/embed/yZS0fbzquFU"
+          title="Hướng dẫn sạc xe ô tô điện tại trạm sạc VinFast"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        />
+      </Modal>
     </section>
   )
 }

@@ -34,6 +34,7 @@ export default function VinFastGreen() {
                 imageUrl={product.image}
                 canHover={product.canHover}
                 imageUrlHover={product.imageHover}
+                link={product.link}
               />
             ))}
           </div>

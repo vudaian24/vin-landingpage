@@ -13,7 +13,7 @@ export default function TraiNghiemKhachHang() {
       style={{ backgroundImage: "url('/images/vinfast-contact-bg.jpg')" }}
     >
       <div className="max-w-[1065px] w-full px-[10px]">
-        <h2 className="text-[30px] font-bold leading-9">
+        <h2 className="text-[30px] font-bold leading-9 !text-white">
           CẢM ƠN<br />QUÝ KHÁCH HÀNG!
         </h2>
         <p className="text-[20px] mt-4">

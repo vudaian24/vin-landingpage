@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useRef, useState } from 'react'
-import { ChevronLeft, ChevronRight, Expand } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Expand, ExpandIcon, Maximize2 } from 'lucide-react'
 import Modal from '../ui/Modal'
 
 interface CarVariant {
@@ -56,7 +56,7 @@ export default function CarColorSlider({ carVariants }: CarColorSliderProps) {
 
   return (
     <>
-      <div className="max-w-5xl mx-auto px-4 py-6">
+      <div className="max-w-5xl mx-auto">
         <div className="relative group w-full flex justify-center bg-white rounded-xl overflow-hidden">
           <button
             onClick={() => changeIndex('left')}
@@ -65,7 +65,7 @@ export default function CarColorSlider({ carVariants }: CarColorSliderProps) {
             <ChevronLeft className="w-8 h-8 text-black" />
           </button>
 
-          <div className="relative w-full h-[300px] overflow-hidden">
+          <div className="relative w-full h-[340px] overflow-hidden">
             {carVariants.map((car, index) => {
               let className = 'absolute top-0 left-0 w-full h-full object-contain pointer-events-none'
 
@@ -82,7 +82,7 @@ export default function CarColorSlider({ carVariants }: CarColorSliderProps) {
                   key={index}
                   src={car.image}
                   alt={car.name}
-                  className={className}
+                  className={`${className} w-full h-full object-cover`}
                 />
               )
             })}
@@ -94,21 +94,21 @@ export default function CarColorSlider({ carVariants }: CarColorSliderProps) {
           >
             <ChevronRight className="w-8 h-8 text-black" />
           </button>
+          <div className="mt-3 pl-2 absolute bottom-2.5 left-1.5 z-40">
+            <button
+              className="w-9 h-9 border-2 border-[#E0E0E0] rounded-full flex items-center justify-center text-gray-500 hover:bg-[#1464f4] hover:border-[#1464f4] hover:text-white cursor-pointer"
+              onClick={() => setOpenModal(true)}
+            >
+              <Maximize2 className="w-5 h-5 font-bold text-[#c7c7c7]" />
+            </button>
+          </div>
         </div>
 
-        <div className="mt-3 pl-2">
-          <button
-            className="w-9 h-9 border rounded-full flex items-center justify-center text-gray-500 hover:bg-[#1464f4] hover:text-white cursor-pointer"
-            onClick={() => setOpenModal(true)}
-          >
-            <Expand className="w-5 h-5" />
-          </button>
-        </div>
 
         <div className="mt-4 overflow-hidden">
           <div
             ref={thumbnailRef}
-            className="flex gap-3 overflow-x-auto scrollbar-hide px-1 cursor-grab active:cursor-grabbing"
+            className="flex gap-3 overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing"
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
             onMouseUp={stopDragging}
@@ -118,8 +118,8 @@ export default function CarColorSlider({ carVariants }: CarColorSliderProps) {
               <div
                 key={index}
                 onClick={() => setSelectedIndex(index)}
-                className={`flex-shrink-0 w-[100px] h-[60px] cursor-pointer rounded border transition-all duration-200 ${selectedIndex === index
-                  ? 'border-[#1464f4]'
+                className={`flex-shrink-0 w-[133px] h-[74px] cursor-pointer rounded border transition-all duration-200 ${selectedIndex === index
+                  ? 'border-[#3c3c3c]'
                   : 'border-transparent opacity-70 hover:opacity-100'
                   }`}
               >

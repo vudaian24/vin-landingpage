@@ -14,8 +14,8 @@ export default function Contact() {
       style={{ backgroundImage: "url('/images/vinfast-contact-bg.jpg')" }}
     >
       <div className="max-w-[1065px] w-full px-[10px]">
-        <p className="text-[20px] font-bold">SHOWROOM</p>
-        <h1 className="text-[30px] font-bold">VINFAST THĂNG LONG</h1>
+        <p className="text-[20px] font-bold text-white">SHOWROOM</p>
+        <h1 className="text-[30px] font-bold !text-white">VINFAST THĂNG LONG</h1>
         <p className="text-[15px] mt-4">
           Địa Chỉ: Số 68 Trịnh Văn Bô, Xuân Phương, Nam Từ Liêm, Hà Nội.
         </p>

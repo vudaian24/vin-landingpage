@@ -74,7 +74,7 @@ export default function PinVaTramSacOToDien() {
         {/* Second Section - Cost Savings */}
         <section className="space-y-6">
           <div className="space-y-0.5">
-            <h3 className="text-2xl font-bold text-gray-900">Tiết kiệm chi phí</h3>
+            <h3 className="text-2xl font-bold">Tiết kiệm chi phí</h3>
             <h4 className="text-2xl font-bold text-gray-800">Thuê pin ô tô điện linh hoạt</h4>
           </div>
 
@@ -86,7 +86,7 @@ export default function PinVaTramSacOToDien() {
 
         {/* Policy Section */}
         <section className="space-y-6">
-          <h2 className="text-2xl font-bold text-gray-900">Chính sách thuê pin</h2>
+          <h2 className="text-2xl font-bold">Chính sách thuê pin</h2>
 
           <div className="space-y-6">
             <h3 className="text-xl font-semibold text-gray-800">Phí thuê pin hàng tháng</h3>

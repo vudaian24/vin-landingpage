@@ -3,31 +3,37 @@ export const vinfastCars = [
     name: 'VINFAST VF 3',
     price: '299.000.000 VNĐ',
     image: '/images/cars/vinfast-vf3.jpg',
+    link: '/o-to/vinfast-vf-9',
   },
   {
     name: 'VINFAST VF 5',
     price: '529.000.000 VNĐ',
     image: '/images/cars/vinfast-vf5.jpg',
+    link: '/o-to/vinfast-vf-9',
   },
   {
     name: 'VINFAST VF 6',
     price: '689.000.000 VNĐ',
     image: '/images/cars/vinfast-vf6.jpg',
+    link: '/o-to/vinfast-vf-9',
   },
   {
     name: 'VINFAST VF 7',
     price: '799.000.000 VNĐ',
     image: '/images/cars/vinfast-vf7.jpg',
+    link: '/o-to/vinfast-vf-9',
   },
   {
     name: 'VINFAST VF 8',
     price: '1.019.000.000 VNĐ',
     image: '/images/cars/vinfast-vf8.jpg',
+    link: '/o-to/vinfast-vf-9',
   },
   {
     name: 'VINFAST VF 9',
     price: '1.499.000.000 VNĐ',
     image: '/images/cars/vinfast-vf9.jpg',
+    link: '/o-to/vinfast-vf-9',
   },
 ]
 
@@ -41,6 +47,7 @@ export const greenCars = [
     canHover: true,
     image: '/images/cars/vinfast-minio.png',
     imageHover: '/images/cars/vinfast-minio-hover.jpg',
+    link: '/o-to/vinfast-minio-green',
   },
   {
     name: 'VINFAST HERIO GREEN',
@@ -51,6 +58,7 @@ export const greenCars = [
     canHover: true,
     image: '/images/cars/vinfast-herio.png',
     imageHover: '/images/cars/vinfast-herio-hover.jpg',
+    link: '/o-to/vinfast-minio-green',
   },
   {
     name: 'VINFAST NERIO GREEN',
@@ -61,6 +69,7 @@ export const greenCars = [
     canHover: true,
     image: '/images/cars/vinfast-nerio.png',
     imageHover: '/images/cars/vinfast-nerio-hover.jpg',
+    link: '/o-to/vinfast-minio-green',
   },
   {
     name: 'VINFAST LIMO GREEN',
@@ -71,6 +80,7 @@ export const greenCars = [
     canHover: true,
     image: '/images/cars/vinfast-limo.png',
     imageHover: '/images/cars/vinfast-limo-hover.jpg',
+    link: '/o-to/vinfast-minio-green',
   },
 ]
 

@@ -7,7 +7,7 @@ export default function HuongDanSuDungTramSac() {
     <div className="w-full flex flex-col">
       <div className="space-y-2 mb-12">
         <span className="text-xs font-semibold text-blue-600 uppercase">Video Blog, Tin tức</span>
-        <h1 className="text-2xl font-bold text-gray-900">Hướng dẫn sử dụng trạm sạc</h1>
+        <h1 className="text-2xl font-bold">Hướng dẫn sử dụng trạm sạc</h1>
         <div className="w-9 h-[3px] bg-gray-200 rounded-full" />
       </div>
 

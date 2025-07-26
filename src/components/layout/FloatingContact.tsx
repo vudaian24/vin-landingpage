@@ -8,18 +8,20 @@ export default function FloatingContact() {
   return (
     <div className="fixed left-4 bottom-[8%] transform z-50 flex flex-col items-center gap-6">
       <ContactButton
-        iconUrl="https://vinfastautolongbien.vn/wp-content/plugins/button-contact-vr/img/zalo.png"
+        iconUrl="/images/zalo.png"
         alt="Zalo"
         link="https://zalo.me/0783382001"
-        background='bg-[#2196F3]'
+        background='bg-[#63b5f7]'
+        backgroundIcon='bg-[#2196f3]'
       />
       <ContactButton
         alt="Phone"
         link="tel:0783382001"
         isPhone
         children={<PhoneBar />}
-        background='bg-[#00adef]'
+        background='bg-[#4cc5f4]'
         iconUrl="https://vinfastautolongbien.vn/wp-content/plugins/button-contact-vr/img/phone.png"
+        backgroundIcon='bg-[#00adef]'
       />
     </div>
   )
@@ -27,7 +29,7 @@ export default function FloatingContact() {
 
 const PhoneBar = () => {
   return (
-    <Link href={"tel:0783382001"} className='absolute hidden md:flex w-[162px] items-center left-3 gap-4 whitespace-nowrap text-white bg-[#2196F3] text-base px-[15px] top-3 py-[7px] rounded-full'>
+    <Link href={"tel:0783382001"} className='absolute hidden md:flex w-[162px] items-center left-3 gap-4 whitespace-nowrap text-white bg-[#00adef] text-base pl-[10px] pr-[15px] top-3 py-[7px] rounded-full'>
       <Image
         src="https://vinfastautolongbien.vn/wp-content/plugins/button-contact-vr/img/phone.png"
         width={25}
