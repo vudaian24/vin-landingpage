@@ -6,46 +6,28 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'VinFast Mini Green',
+  title: 'VinFast Herio Green',
 }
 export default async function ProductDetailPage() {
   const carVariants = [
-    { name: 'vinfast-minio-green', image: '/images/vinfast-minio-green/vinfast-minio-green.png' },
+    { 
+      name: 'vinfast-herio-green', 
+      image: '/images/vinfast-herio-green/vinfast-herio-green.png' },
     {
-      name: 'vinfast-minio-green',
-      image: '/images/vinfast-minio-green/vinfast-minio-green-280318-c03.jpg',
+      name: 'vinfast-herio-green',
+      image: '/images/vinfast-herio-green/vinfast-herio-green-250318-c02-1200x675.jpg',
     },
     {
-      name: 'vinfast-minio-green',
-      image: '/images/vinfast-minio-green/vinfast-minio-green-280318-nc03-1200x675.jpg',
+      name: 'vinfast-herio-green',
+      image: '/images/vinfast-herio-green/vinfast-herio-green-250318-bc02.jpg',
     },
     {
-      name: 'vinfast-minio-green',
-      image: '/images/vinfast-minio-green/vinfast-minio-green-280318-c05.jpg',
+      name: 'vinfast-herio-green',
+      image: '/images/vinfast-herio-green/vinfast-herio-green-250318-c01-765x430.jpg',
     },
     {
-      name: 'vinfast-minio-green',
-      image: '/images/vinfast-minio-green/vinfast-minio-green-280318-nc05-765x430.jpg',
-    },
-    {
-      name: 'vinfast-minio-green',
-      image: '/images/vinfast-minio-green/vinfast-minio-green-280318-c06.jpg',
-    },
-    {
-      name: 'vinfast-minio-green',
-      image: '/images/vinfast-minio-green/vinfast-minio-green-280318-c04.jpg',
-    },
-    {
-      name: 'vinfast-minio-green',
-      image: '/images/vinfast-minio-green/vinfast-minio-green-280318-nc04-765x430.jpg',
-    },
-    {
-      name: 'vinfast-minio-green',
-      image: '/images/vinfast-minio-green/vinfast-minio-green-280318-c02.jpg',
-    },
-    {
-      name: 'vinfast-minio-green',
-      image: '/images/vinfast-minio-green/vinfast-minio-green-280318-nc02-765x430.jpg',
+      name: 'vinfast-herio-green',
+      image: '/images/vinfast-herio-green/vinfast-herio-green-250318-bc01-765x430.jpg',
     },
   ]
 
@@ -58,11 +40,11 @@ export default async function ProductDetailPage() {
           <div className="space-y-4">
             <div className="w-full">
               <Image
-                src="/images/vinfast-minio-green/vinfast-minio-green-250318-g98b.jpg"
-                alt="VinFast VF9 Banner 1"
+                src="/images/vinfast-herio-green/vinfast-herio-green-250318-g99-1200x675.jpg"
+                alt="VinFast Banner 1"
                 width={1200}
                 height={600}
-                className="h-auto w-full rounded"
+                className="h-auto w-full border-0"
               />
             </div>
           </div>
@@ -83,7 +65,7 @@ export default async function ProductDetailPage() {
                 </div>
                 <div className="p-2 pb-4 text-left">
                   <p className="text-[40px] font-semibold text-[#3c3c3c]">
-                    33 <span className="text-[26px] font-normal">phút</span>
+                    33 <span className="text-[26px] font-normal">phút (10%-70%)</span>
                   </p>
                   <p className="text-sm text-[#3c3c3c]">Thời gian nạp pin nhanh nhất.</p>
                 </div>
@@ -126,50 +108,18 @@ export default async function ProductDetailPage() {
                 2” – Linh hoạt như xe máy, an toàn như xe hơi, phù hợp với mọi nhu cầu sử dụng.
               </p> */}
               <ImageWithCaption
-                src="/images/vinfast-minio-green/vinfast-minio-green-250318-g97.jpg"
-                alt="Ngoại Thất VinFast Minio Green"
-                caption="Ngoại Thất VinFast Minio Green"
+                src="/images/vinfast-herio-green/vinfast-herio-green-250303-ngt23.jpg"
+                alt="Ngoại Thất VinFast Herio Green"
+                caption="Ngoại Thất VinFast Herio Green"
                 className="mb-8 pt-4"
               />
               <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                 <img
-                  src="/images/vinfast-minio-green/vinfast-minio-green-280318-sc01.jpg"
+                  src="/images/vinfast-herio-green/vinfast-herio-green-250303-ngt21.jpg"
                   alt="thong so ky thuat"
                 />
                 <img
-                  src="/images/vinfast-minio-green/vinfast-minio-green-280318-nc01.jpg"
-                  alt="thong so ky thuat"
-                />
-                <img
-                  src="/images/vinfast-minio-green/vinfast-minio-green-280318-sbc01.jpg"
-                  alt="thong so ky thuat"
-                />
-                <img
-                  src="/images/vinfast-minio-green/vinfast-minio-green-250303-ngt22.jpg"
-                  alt="thong so ky thuat"
-                />
-                <img
-                  src="/images/vinfast-minio-green/vinfast-minio-green-280318-c04.jpg"
-                  alt="thong so ky thuat"
-                />
-                <img
-                  src="/images/vinfast-minio-green/vinfast-minio-green-280318-c02.jpg"
-                  alt="thong so ky thuat"
-                />
-                <img
-                  src="/images/vinfast-minio-green/vinfast-minio-green-280318-c06.jpg"
-                  alt="thong so ky thuat"
-                />
-                <img
-                  src="/images/vinfast-minio-green/vinfast-minio-green-280318-c03.jpg"
-                  alt="thong so ky thuat"
-                />
-                <img
-                  src="/images/vinfast-minio-green/vinfast-minio-green-280318-c05.jpg"
-                  alt="thong so ky thuat"
-                />
-                <img
-                  src="/images/vinfast-minio-green/vinfast-minio-green-280318-c01.jpg"
+                  src="/images/vinfast-herio-green/vinfast-herio-green-250303-ngt22.jpg"
                   alt="thong so ky thuat"
                 />
               </div>
@@ -178,41 +128,34 @@ export default async function ProductDetailPage() {
               <div className="mx-auto mt-10 max-w-6xl">
                 <h1 className="mt-2 text-[27px] font-bold text-gray-900 uppercase">Nội thất</h1>
                 <h2 className="text-[22px] font-bold text-gray-800">
-                  VinFast Minio Green – Tối giản nhưng không thiếu tiện nghi.
+                  VinFast Herio Green – Khoang lái thoải mái – Thiết kế thông minh.
                 </h2>
               </div>
               <p className="mt-2 text-base text-[#3c3c3c]">
-                Nội Thất VinFast Minio Green thiết kế khoang lái được tối ưu để mang lại sự thoải
-                mái bất ngờ. Ghế ngồi êm ái, màn hình trực quan, vô lăng tích hợp nút bấm giúp thao
-                tác dễ dàng. Đầy đủ tiện ích cần thiết để di chuyển nội thành thuận tiện và thoải
-                mái.
+                Tối ưu không gian cho tài xế vận hành nhiều giờ mà vẫn thư thái. Ghế ngồi thiết kế
+                mỏng giúp mở rộng không gian để chân. Màn hình giải trí trung tâm trực quan, thao
+                tác nhanh chóng. Hệ thống lọc không khí PM2.5 giúp khoang lái luôn trong lành, mang
+                lại trải nghiệm dễ chịu cho cả tài xế và hành khách.
               </p>
               <div className="space-y-4">
                 <div className="w-full">
                   <ImageWithCaption
-                    src="/images/vinfast-minio-green/vinfast-minio-green-250318-nt34-1200x675.jpg"
-                    alt="Nội Thất VinFast Minio Green"
-                    caption="Nội Thất VinFast Minio Green"
+                    src="/images/vinfast-herio-green/vinfast-herio-green-250318-nt34.jpg"
+                    alt="Nội Thất VinFast Herio Green"
+                    caption="Nội Thất VinFast Herio Green"
                     className="mb-8 pt-4"
                   />
                 </div>
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                   <Image
-                    src="/images/vinfast-minio-green/vinfast-minio-green-250318-nt33.jpg"
+                    src="/images/vinfast-herio-green/vinfast-herio-green-250318-nt31.jpg"
                     alt="VinFast VF9 Banner 2"
                     width={600}
                     height={400}
                     className="h-auto w-full rounded"
                   />
                   <Image
-                    src="/images/vinfast-minio-green/vinfast-minio-green-250318-nt32.jpg"
-                    alt="VinFast VF9 Banner 2"
-                    width={600}
-                    height={400}
-                    className="h-auto w-full rounded"
-                  />
-                  <Image
-                    src="/images/vinfast-minio-green/vinfast-minio-green-250318-nt31.jpg"
+                    src="/images/vinfast-herio-green/vinfast-herio-green-250318-nt32.jpg"
                     alt="VinFast VF9 Banner 2"
                     width={600}
                     height={400}
@@ -225,49 +168,52 @@ export default async function ProductDetailPage() {
               <div className="mx-auto mt-10 max-w-6xl">
                 <h1 className="mt-2 text-[27px] font-bold text-gray-900 uppercase">Thông số xe</h1>
                 <h2 className="text-[22px] font-bold text-gray-800">
-                  VinFast Minio Green – Gọn nhẹ, tiết kiệm năng lượng.
+                  VinFast Herio Green – Vận hành mạnh mẽ.
                 </h2>
               </div>
               <ul className="list-disc pt-4 pl-5">
-                <li className="mb-[10px]">Số chỗ ngồi: 4 chỗ</li>
-                <li className="mb-[10px]">Dài x Rộng x Cao: 3090 x 1496 x 1625</li>
-                <li className="mb-[10px]">Chiều dài cơ sở: 2065 mm</li>
-                <li className="mb-[10px]">Khoảng sáng gầm xe: 155 mm</li>
-                <li className="mb-[10px]">Kích thước la-zăng: 13 inch</li>
-                <li className="mb-[10px]">Thời gian nạp pin: 30 phút (10%-70%)</li>
-                <li className="mb-[10px]">Quãng đường chạy (NEDC): 170 km/lần sạc đầy</li>
-                <li className="mb-[10px]">Chế độ lái: Eco/Normal</li>
+                <li className="mb-[10px]">Số chỗ ngồi: 5 chỗ</li>
+                <li className="mb-[10px]">Dài x Rộng x Cao: 3967 x 1723 x 1579</li>
+                <li className="mb-[10px]">Chiều dài cơ sở: 2514 mm</li>
+                <li className="mb-[10px]">Khoảng sáng gầm xe: 160 mm</li>
+                <li className="mb-[10px]">Kích thước la-zăng: 16 inch</li>
+                <li className="mb-[10px]">Thời gian nạp pin: 33 phút (10%-70%)</li>
+                <li className="mb-[10px]">Quãng đường chạy (NEDC): 326 km/lần sạc đầy</li>
+                <li className="mb-[10px]">Chế độ lái: Eco/Sport</li>
                 <li className="mb-[10px]">Đóng/mở cốp sau: Chỉnh cơ</li>
               </ul>
             </div>
             <div>
               <div className="mx-auto mt-10 max-w-6xl">
                 <h1 className="mt-2 text-[27px] font-bold text-gray-900 uppercase">Thư viện ảnh</h1>
-                <h2 className="text-[22px] font-bold text-gray-800">VinFast Minio Green</h2>
+                <h2 className="text-[22px] font-bold text-gray-800">VinFast Herio Green</h2>
               </div>
             </div>
             <div className="mt-3 mb-8 grid grid-cols-1 gap-5 md:grid-cols-2">
               <img
-                src="/images/vinfast-minio-green/vinfast-minio-green-250318-g96.jpg"
+                src="/images/vinfast-herio-green/vinfast-herio-green-250303-ngt23.jpg"
                 alt="thong so ky thuat"
               />
               <img
-                src="/images/vinfast-minio-green/vinfast-minio-green-250318-g98b.jpg"
+                src="/images/vinfast-herio-green/vinfast-herio-green-250303-ngt21.jpg"
                 alt="thong so ky thuat"
               />
               <img
-                src="/images/vinfast-minio-green/vinfast-minio-green-250318-g95.jpg"
+                src="/images/vinfast-herio-green/vinfast-herio-green-250303-ngt22.jpg"
                 alt="thong so ky thuat"
               />
               <img
-                src="/images/vinfast-minio-green/vinfast-minio-green-250318-g97.jpg"
+                src="/images/vinfast-herio-green/vinfast-herio-green-250318-nt34.jpg"
                 alt="thong so ky thuat"
               />
-            </div>
             <img
-              src="/images/vinfast-minio-green/vinfast-minio-green-250318-g93.jpg"
+              src="/images/vinfast-herio-green/vinfast-herio-green-250318-nt32.jpg"
+              alt="thong so ky thuat"
+            /><img
+              src="/images/vinfast-herio-green/vinfast-herio-green-250318-nt32.jpg"
               alt="thong so ky thuat"
             />
+            </div>
           </section>
         </div>
       ),
@@ -308,11 +254,11 @@ export default async function ProductDetailPage() {
           </div>
           <div className="w-full md:w-[40%]">
             <ProductInfo
-              title="VinFast Minio Green"
+              title="VinFast Herio Green"
               price="269.000.000"
-              variants={[{ name: 'VinFast Minio Green', price: '269.000.000' }]}
-              rangePerCharge="170 km"
-              maxPower="20 kW"
+              variants={[{ name: 'VinFast Herio Green', price: '499.000.000' }]}
+              rangePerCharge="326 km"
+              maxPower="100 kW"
               hotline="0783382001"
             />
           </div>
