@@ -4,8 +4,11 @@ import Image from 'next/image'
 import { Gift, Menu } from 'lucide-react'
 import { vinfastCars } from '@/data/mock-data'
 import ButtonCustom from '../ui/ButtonCustom'
+import { useState } from 'react'
+import ContactModal from '../ui/ContactModal'
 
 export default function CarList() {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <div className="max-w-[1080px] mx-auto py-8">
       <h2 className="text-[30px] font-bold text-black mb-4 text-center">XE Ô TÔ ĐIỆN VINFAST</h2>
@@ -20,6 +23,7 @@ export default function CarList() {
                 src={car.image}
                 alt={car.name}
                 fill
+                sizes="300px"
                 className="object-contain"
               />
             </div>
@@ -35,17 +39,20 @@ export default function CarList() {
                 variant="primary"
                 icon={<Gift size={14} />}
                 className="text-[12px] px-3 py-1"
+                onClick={() => setIsOpen(true)}
               />
               <ButtonCustom
                 label="XEM XE"
                 variant="outline"
                 icon={<Menu size={14} />}
-                className="text-[12px] px-3 py-1"
+                className="text-[12px] px-3 py-1 cursor-pointer"
+                href={car.link}
               />
             </div>
           </div>
         ))}
       </div>
+      <ContactModal open={isOpen} onClose={() => setIsOpen(false)} />
     </div>
   )
 }

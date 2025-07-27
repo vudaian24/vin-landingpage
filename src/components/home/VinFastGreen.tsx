@@ -3,8 +3,11 @@
 import { greenCars } from "@/data/mock-data"
 import { ChevronRight } from "lucide-react"
 import ButtonCustom from "../ui/ButtonCustom"
+import ContactModal from "../ui/ContactModal"
+import { useState } from "react"
 
 export default function VinFastGreen() {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <div
       className="w-full"
@@ -30,7 +33,7 @@ export default function VinFastGreen() {
                   <li> | Công suất tối đa <strong>{car.power}</strong></li>
                 </ul>
                 <a
-                  href="/o-to/vinfast-limo-green/"
+                  href={car.link}
                   className="relative inline-flex items-center text-[13px] font-bold uppercase text-[#333] transition-all duration-300 hover:text-[#1464f4] before:absolute before:bottom-[-5px] before:left-[20%] before:h-[2px] before:w-[60%] before:bg-current before:opacity-30 before:transition-all before:duration-300 hover:before:left-0 hover:before:w-full hover:before:opacity-100"
                 >
                   <span>Xem thêm</span>
@@ -42,11 +45,13 @@ export default function VinFastGreen() {
                 variant="primary"
                 icon={<span>🎁</span>}
                 className="mt-4 w-full px-4 py-2 text-sm font-medium"
+                onClick={() => setIsOpen(true)}
               />
             </div>
           ))}
         </div>
       </div>
+      <ContactModal open={isOpen} onClose={() => setIsOpen(false)} />
     </div>
   )
 }

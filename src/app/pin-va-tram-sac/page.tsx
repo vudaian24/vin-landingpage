@@ -38,7 +38,7 @@ export default function BatteryAndChargingStations() {
                 />
                 {article.video && (
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <button className="group w-10 h-10 rounded-full border-2 border-white flex items-center justify-center transition-colors duration-300 bg-transparent bg-opacity-40 hover:bg-[#1464f4] hover:border-[#1464f4]"> {/* Added bg-black opacity for better visibility */}
+                    <button className="group w-10 h-10 cursor-pointer rounded-full border-2 border-white flex items-center justify-center transition-colors duration-300 bg-transparent bg-opacity-40 hover:bg-[#1464f4] hover:border-[#1464f4]"> {/* Added bg-black opacity for better visibility */}
                       <svg
                         className="w-5 h-5 text-white group-hover:text-white transition-colors duration-300"
                         fill="currentColor"
