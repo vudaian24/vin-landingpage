@@ -27,7 +27,10 @@ const navItems = [
     label: 'VinFast Green',
     href: '/san-pham/vinfast-green',
     subMenuItems: [
-      { label: 'VinFast Mini Green', href: '/o-to/vinfast-minio-green' },
+      { label: 'VinFast Minio Green', href: '/o-to/vinfast-minio-green' },
+      { label: 'VinFast Herio Green', href: '/o-to/vinfast-herio-green' },
+      { label: 'VinFast Nerio Green', href: '/o-to/vinfast-nerio-green' },
+      { label: 'VinFast Limo Green', href: '/o-to/vinfast-limo-green' },
     ],
   },
   { label: 'Pin và trạm sạc', href: '/pin-va-tram-sac' },

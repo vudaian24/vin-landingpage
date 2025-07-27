@@ -160,50 +160,52 @@ export default async function ProductDetailPage() {
                   VinFast VF 3 . Tự do sáng tạo, toả sáng chất riêng!
                 </h2>
               </div>
-              <p className="mt-2 text-base text-[#3c3c3c]">
+              <p className="mt-2 text-base text-[#3c3c3c] mb-4">
                 Với dải màu ngoại thất đa dạng và độc đáo, bao gồm 9 tùy chọn màu sắc trẻ trung và
                 thời thượng, VF 3 là sự lựa chọn hoàn hảo giúp bạn thoả sức thể hiện sự khác biệt và
                 cá tính của riêng mình. Dù bạn là ai, hãy lựa chọn màu sắc và trang bị VF 3 theo sở
                 thích của bạn, và cùng VinFast biến ước mơ của bạn thành hiện thực.
               </p>
+              <img src="/images/vinfast-vf-3/vinfast-vf3-240510-g27-1200x623.jpg" alt="thong so ky thuat" />
               <div className="mx-auto mt-10 max-w-6xl">
                 {/* <h1 className="text-[27px] font-bold text-gray-900 mt-2 uppercase">VinFast VF 3 . Tự do sáng tạo, toả sáng chất riêng!</h1> */}
                 <h2 className="text-[22px] font-bold text-gray-800">
                   La-zăng vượt trội về kích thước & phong cách.
                 </h2>
               </div>
-              <p className="mt-2 text-base text-[#3c3c3c]">
+              <p className="mt-2 text-base text-[#3c3c3c] mb-4">
                 VinFast VF 3 là mẫu xe hiếm hoi trong phân khúc xe sở hữu la-zăng kích thước 16
                 inch, không chỉ tạo điểm nhấn về thiết kế mà còn góp phần gia tăng khả năng di
                 chuyển trên địa hình đa dạng trong đô thị. Đặc biệt, VF 3 được trang bị tuỳ chọn ốp
                 la-zăng thiết kế khí động học, vừa tăng thêm vẻ cá tính, sự sang trọng cho chiếc xe,
                 vừa gia tăng quãng đường di chuyển trong mỗi lần sạc đầy.
               </p>
+              <img src="/images/vinfast-vf-3/vinfast-vf3-240510-g25-1200x623.jpg" alt="thong so ky thuat" />
               <div className="mx-auto mt-10 max-w-6xl">
                 {/* <h1 className="text-[27px] font-bold text-gray-900 mt-2 uppercase">VinFast VF 3 . Tự do sáng tạo, toả sáng chất riêng!</h1> */}
                 <h2 className="text-[22px] font-bold text-gray-800">
                   VinFast VF 3 – Biểu tượng mới của cuộc sống đô thị.
                 </h2>
               </div>
-              <p className="mt-2 text-base text-[#3c3c3c]">
+              <p className="mt-2 text-base text-[#3c3c3c] mb-4">
                 Vượt lên trên một phương tiện di chuyển thông thường, VinFast VF 3 là biểu tượng mới
                 mang tính cách mạng trong cuộc sống đô thị. Với thiết kế hiện đại, hiệu suất vận
                 hành linh hoạt, tính năng an toàn tiên tiến, cùng chi phí vận hành siêu rẻ, VF 3 sẽ
                 mở ra một cách tiếp cận hoàn toàn mới trong việc lựa chọn phương tiện di chuyển hàng
                 ngày, mang lại sự thuận tiện, dễ dàng và đặc biệt thoải mái cho tất cả mọi người.
               </p>
+              <img src="/images/vinfast-vf-3/vinfast-vf3-240510-g24-1200x675.jpg" alt="thong so ky thuat" />
               <div className="mx-auto mt-10 max-w-6xl">
                 {/* <h1 className="text-[27px] font-bold text-gray-900 mt-2 uppercase">VinFast VF 3 . Tự do sáng tạo, toả sáng chất riêng!</h1> */}
                 <h2 className="text-[22px] font-bold text-gray-800">
                   VF 3 không chỉ là một chiếc xe điện tiên tiến.
                 </h2>
               </div>
-              <p className="mt-2 text-base text-[#3c3c3c]">
-                Mà còn là một tác phẩm nghệ thuật kết hợp giữa công nghệ và sự sáng tạo trong thiết
-                kế.
+              <p className="mt-2 text-base text-[#3c3c3c] mb-4">
+                Mà còn là một tác phẩm nghệ thuật kết hợp giữa công nghệ và sự sáng tạo trong thiết kế.
               </p>
-
-              <div className="mb-5 grid grid-cols-1 gap-5 md:grid-cols-2">
+              <img src="/images/vinfast-vf-3/vinfast-vf3-240510-g23-1200x675.jpg" alt="thong so ky thuat" />
+              {/* <div className="mb-5 grid grid-cols-1 gap-5 md:grid-cols-2">
                 <ImageWithCaption
                   src="/images/vinfast-vf-3/vinfast-VF3-noi-that-241212-33.jpg"
                   alt="Bộ sạc theo xe 2.2 kW (Ô tô điện)"
@@ -218,8 +220,8 @@ export default async function ProductDetailPage() {
                   className="pt-4"
                   capTionCenter={false}
                 />
-              </div>
-              <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+              </div> */}
+              {/* <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                 <ImageWithCaption
                   src="/images/vinfast-vf-3/vinfast-VF3-noi-that-241212-32.jpg"
                   alt="Bộ sạc theo xe 2.2 kW (Ô tô điện)"
@@ -234,10 +236,10 @@ export default async function ProductDetailPage() {
                   className="pt-4"
                   capTionCenter={false}
                 />
-              </div>
+              </div> */}
             </div>
             <div>
-              <div className="mx-auto mt-10 max-w-6xl">
+              <div className="mx-auto mt-12 max-w-6xl">
                 <h1 className="mt-2 text-[27px] font-bold text-gray-900 uppercase">Nội thất</h1>
                 <h2 className="text-[22px] font-bold text-gray-800">
                   VinFast VF 3. Luôn đủ chỗ cho mọi người!
@@ -250,7 +252,13 @@ export default async function ProductDetailPage() {
                 gian đặc biệt, nơi chứa đựng những kỷ niệm đáng nhớ trên mọi hành trình khám phá
                 phong cách sống của riêng bạn!
               </p>
-              <img src="/images/vinfast-vf-3/vinfast-VF3-241212-g91b.jpg" alt="thong so ky thuat" />
+              <ImageWithCaption
+                  src="/images/vinfast-vf-3/vinfast-vf3-240510-g22-1200x675.jpg"
+                  alt="Nội thất VF 3"
+                  caption="Nội thất VF 3"
+                  className="pt-4"
+                  capTionCenter={true}
+                />
             </div>
             <div>
               <div className="mx-auto mt-10 max-w-6xl">
@@ -277,7 +285,7 @@ export default async function ProductDetailPage() {
                 người Việt thật dễ dàng!
               </p>
 
-              {/* <img src="/images/vinfast-vf-3/vinfast-VF3-241212-41.jpg" alt="thong so ky thuat" /> */}
+              <img src="/images/vinfast-vf-3/vinfast-vf3-240510-g21-1200x401.jpg" alt="thong so ky thuat" />
             </div>
             {/* <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-50 rounded-lg overflow-hidden bg-[#ECECEC] mt-8">
               <div className="p-2 pb-4 text-left">
@@ -299,37 +307,25 @@ export default async function ProductDetailPage() {
               </h1>
               <h2 className="text-[22px] font-bold text-gray-800">VinFast VF 3</h2>
             </div>
-            <div className="mt-3 flex flex-col gap-3">
+            <div className="mt-3 flex flex-col gap-3 mb-4">
               <img
-                src="/images/vinfast-vf-3/vinfast-VF3-241212-tskt-04.jpg"
+                src="/images/vinfast-vf-3/vinfast-vf3-240510-tskt-81.jpg"
                 alt="thong so ky thuat"
               />
               <img
-                src="/images/vinfast-vf-3/vinfast-VF3-241212-tskt-05.jpg"
+                src="/images/vinfast-vf-3/vinfast-vf3-240510-tskt-82.jpg"
                 alt="thong so ky thuat"
               />
               <img
-                src="/images/vinfast-vf-3/vinfast-VF3-241212-tskt-06.jpg"
+                src="/images/vinfast-vf-3/vinfast-vf3-240510-tskt-83.jpg"
                 alt="thong so ky thuat"
               />
               <img
-                src="/images/vinfast-vf-3/vinfast-VF3-241212-tskt-07.jpg"
-                alt="thong so ky thuat"
-              />
-              <img
-                src="/images/vinfast-vf-3/vinfast-VF3-241212-tskt-08.jpg"
-                alt="thong so ky thuat"
-              />
-              <img
-                src="/images/vinfast-vf-3/vinfast-VF3-241212-tskt-09.jpg"
-                alt="thong so ky thuat"
-              />
-              <img
-                src="/images/vinfast-vf-3/vinfast-VF3-241212-tskt-01.jpg"
+                src="/images/vinfast-vf-3/vinfast-vf3-240510-g27-1200x623.jpg"
                 alt="thong so ky thuat"
               />
             </div>
-            <div className="space-y-8 pt-10 text-sm leading-relaxed text-[#1a1a1a]">
+            {/* <div className="space-y-8 pt-10 text-sm leading-relaxed text-[#1a1a1a]">
               <div>
                 <h2 className="text-xl font-extrabold uppercase">Chất lượng đẳng cấp</h2>
                 <h3 className="mt-1 text-base font-bold">VinFast VF 9. Đồng hành trọn đời.</h3>
@@ -411,8 +407,8 @@ export default async function ProductDetailPage() {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="grid grid-cols-1 gap-4 pt-10 md:grid-cols-2">
+            </div> */}
+            {/* <div className="grid grid-cols-1 gap-4 pt-10 md:grid-cols-2">
               {imagesDetails.map((img, index) => (
                 <Image
                   key={index}
@@ -423,7 +419,7 @@ export default async function ProductDetailPage() {
                   className="h-auto w-full rounded"
                 />
               ))}
-            </div>
+            </div> */}
           </section>
         </div>
       ),
