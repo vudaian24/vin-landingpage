@@ -40,7 +40,8 @@ export default function CarList() {
                 label="XEM XE"
                 variant="outline"
                 icon={<Menu size={14} />}
-                className="text-[12px] px-3 py-1"
+                className="text-[12px] px-3 py-1 cursor-pointer"
+                href={car.link}
               />
             </div>
           </div>
