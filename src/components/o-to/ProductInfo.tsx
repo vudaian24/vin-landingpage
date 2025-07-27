@@ -6,6 +6,7 @@ import { PhoneIcon } from 'lucide-react'
 import SocialShare from './SocialShare'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGift } from '@fortawesome/free-solid-svg-icons'
+import ContactModal from '../ui/ContactModal'
 
 interface ProductInfoProps {
   title: string
@@ -24,6 +25,7 @@ export const ProductInfo: React.FC<ProductInfoProps> = ({
   maxPower,
   hotline,
 }) => {
+  const [open, setOpen] = React.useState(false);
   return (
     <div className="w-full  rounded  text-sm font-sans bg-white">
       <h1 className="text-[32px] font-bold">{title}</h1>
@@ -64,6 +66,7 @@ export const ProductInfo: React.FC<ProductInfoProps> = ({
             variant="primary"
             icon={<span><FontAwesomeIcon icon={faGift} size="lg" /> </span>}
             className="font-bold w-fit text-center px-6.5 py-2 text-[14px]"
+            onClick={() => setOpen(true)}
           />
           <ButtonCustom
             href={`tel:${hotline || '0783382001'}`}
@@ -75,6 +78,7 @@ export const ProductInfo: React.FC<ProductInfoProps> = ({
         </div>
       </div>
       <SocialShare />
+      <ContactModal open={open} onClose={() => setOpen(false)} />
     </div>
   )
 }

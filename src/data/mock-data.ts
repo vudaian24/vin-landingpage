@@ -58,7 +58,7 @@ export const greenCars = [
     canHover: true,
     image: '/images/cars/vinfast-herio.png',
     imageHover: '/images/cars/vinfast-herio-hover.jpg',
-    link: '/o-to/vinfast-minio-green',
+    link: '/o-to/vinfast-herio-green',
   },
   {
     name: 'VINFAST NERIO GREEN',
@@ -69,7 +69,7 @@ export const greenCars = [
     canHover: true,
     image: '/images/cars/vinfast-nerio.png',
     imageHover: '/images/cars/vinfast-nerio-hover.jpg',
-    link: '/o-to/vinfast-minio-green',
+    link: '/o-to/vinfast-nerio-green',
   },
   {
     name: 'VINFAST LIMO GREEN',
@@ -80,7 +80,7 @@ export const greenCars = [
     canHover: true,
     image: '/images/cars/vinfast-limo.png',
     imageHover: '/images/cars/vinfast-limo-hover.jpg',
-    link: '/o-to/vinfast-minio-green',
+    link: '/o-to/vinfast-limo-green',
   },
 ]
 
