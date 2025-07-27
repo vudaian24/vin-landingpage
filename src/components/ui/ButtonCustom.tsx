@@ -25,7 +25,7 @@ export default function ButtonCustom({
     outline: 'border border-[#1464f4] text-[#1464f4] hover:bg-[#1464f4] hover:text-white',
   };
 
-  const classes = cn(baseClass, variants[variant], className);
+  const classes = cn(baseClass, variants[variant], className, 'cursor-pointer');
 
   if (href) {
     return (

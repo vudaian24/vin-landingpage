@@ -33,7 +33,7 @@ export default function VinFastGreen() {
                   <li> | Công suất tối đa <strong>{car.power}</strong></li>
                 </ul>
                 <a
-                  href="/o-to/vinfast-limo-green/"
+                  href={car.link}
                   className="relative inline-flex items-center text-[13px] font-bold uppercase text-[#333] transition-all duration-300 hover:text-[#1464f4] before:absolute before:bottom-[-5px] before:left-[20%] before:h-[2px] before:w-[60%] before:bg-current before:opacity-30 before:transition-all before:duration-300 hover:before:left-0 hover:before:w-full hover:before:opacity-100"
                 >
                   <span>Xem thêm</span>
