@@ -2,14 +2,16 @@
 
 import { ReactNode, useEffect } from 'react'
 import { X } from 'lucide-react'
+import { cn } from '@/lib/utils'
 
 interface ModalProps {
   open: boolean
   onClose: () => void
   children: ReactNode
+  className?: string
 }
 
-export default function Modal({ open, onClose, children }: ModalProps) {
+export default function Modal({ open, onClose, children, className }: ModalProps) {
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose()
@@ -24,13 +26,13 @@ export default function Modal({ open, onClose, children }: ModalProps) {
     <>
       {/* Overlay */}
       <div
-        className="fixed inset-0 bg-black/50 z-40"
+        className="fixed inset-0 bg-black/50 z-[999]"
         onClick={onClose}
       />
 
       {/* Modal content */}
       <div
-        className="fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg max-w-3xl w-full overflow-hidden animate-modal"
+        className={cn('fixed z-[10000] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg max-w-3xl w-full overflow-hidden animate-modal', className)}
 
         onClick={(e) => e.stopPropagation()}
       >

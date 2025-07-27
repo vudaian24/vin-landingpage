@@ -8,6 +8,7 @@ import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import ButtonCustom from '../ui/ButtonCustom'
 import Modal from '../ui/Modal'
+import ContactModal from '../ui/ContactModal'
 
 const navItems = [
   { label: 'Trang chủ', href: '/' },
@@ -208,59 +209,7 @@ export default function Header() {
           </nav>
         </div>
       </header>
-      <Modal open={openModal} onClose={() => setOpenModal(false)}>
-        <div className="flex flex-col md:flex-row w-full">
-          {/* Left: Image */}
-          <div className="w-full md:w-1/2 hidden md:block">
-            <Image
-              src="/images/vf9.jpg"
-              alt="VF9"
-              width={400}
-              height={400}
-              className="h-full w-full object-cover"
-            />
-          </div>
-
-          {/* Right: Form */}
-          <div className="w-full md:w-1/2 p-6 text-sm">
-            <h2 className="text-blue-700 font-bold mb-4">
-              BÁO GIÁ LĂN BÁNH & LÁI THỬ XE
-            </h2>
-
-            <form className="space-y-4">
-              <input
-                type="text"
-                placeholder="Họ và tên"
-                className="w-full border-b border-black outline-none py-1"
-              />
-              <input
-                type="tel"
-                placeholder="Di động *"
-                className="w-full border-b border-black outline-none py-1"
-              />
-              <select className="w-full border border-gray-300 rounded px-2 py-1">
-                <option>Chọn xe</option>
-                <option>VF6</option>
-                <option>VF7</option>
-              </select>
-              <div className="flex items-center gap-4">
-                <label className="flex items-center gap-1">
-                  <input type="radio" name="type" defaultChecked /> Trả góp
-                </label>
-                <label className="flex items-center gap-1">
-                  <input type="radio" name="type" /> Trả thẳng
-                </label>
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-2 rounded"
-              >
-                NHẬN THÔNG TIN
-              </button>
-            </form>
-          </div>
-        </div>
-      </Modal>
+      <ContactModal open={openModal} onClose={() => setOpenModal(false)} />
     </>
   )
 }
