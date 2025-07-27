@@ -18,17 +18,17 @@ const NewsSection = () => {
     {
       image: '/images/news/video-thumb-1.jpg',
       title: 'Hướng dẫn sử dụng trạm sạc',
-      link: '#',
+      link: '/bai-viet/huong-dan-su-dung-tram-sac',
     },
     {
       image: '/images/news/video-thumb-2.jpg',
       title: 'Pin và trạm sạc ô tô điện',
-      link: '#',
+      link: '/bai-viet/pin-va-tram-sac-o-to-dien',
     },
     {
       image: '/images/news/video-thumb-3.jpg',
       title: 'Thiết bị sạc di động',
-      link: '#',
+      link: '/bai-viet/thiet-bi-sac-di-dong',
     },
   ]
 
@@ -77,24 +77,34 @@ const NewsSection = () => {
           <div className="w-full lg:w-1/3 h-full flex flex-col gap-2">
             {newsItems.map((item, index) => (
               <article key={index} className="flex gap-3 bg-white rounded overflow-hidden shadow-sm flex-1">
-                <div className="relative w-[40%] min-w-[130px] h-[90px] sm:h-[110px]">
-                  <Image src={item.image} alt={item.title} fill className="object-cover" />
-                  {index === 0 && (
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <button className="group w-12 h-12 rounded-full border-2 border-white flex items-center justify-center transition-colors duration-300 hover:bg-[#1464f4] hover:border-[#1464f4]">
-                        <svg
-                          className="w-5 h-5 text-white group-hover:text-white transition-colors duration-300"
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </button>
-                    </div>
-                  )}
-                </div>
+                <Link href={item.link}>
+                  <div className="relative w-[180px] h-[90px] sm:h-[110px]">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      className="object-fill"
+                      sizes="(max-width: 640px) 180px"
+                    />
+                    {index === 0 && (
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <button className="group w-12 h-12 rounded-full border-2 border-white cursor-pointer flex items-center justify-center transition-colors duration-300 hover:bg-[#1464f4] hover:border-[#1464f4]">
+                          <svg
+                            className="w-5 h-5 text-white group-hover:text-white transition-colors duration-300"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path d="M8 5v14l11-7z" />
+                          </svg>
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                </Link>
                 <div className="flex flex-col justify-center p-2 pr-4">
-                  <h3 className="text-sm font-semibold">{item.title}</h3>
+                  <Link href={item.link} className='hover:!text-blue-600 text-sm font-semibold'>
+                    {item.title}
+                  </Link>
                   <Link href={item.link} className="text-blue-600 text-xs mt-2 hover:underline">
                     XEM THÊM
                   </Link>

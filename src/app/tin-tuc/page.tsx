@@ -28,7 +28,7 @@ export default function News() {
                 />
                 {article.video && (
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <button className="group w-10 h-10 rounded-full border-2 border-white flex items-center justify-center transition-colors duration-300 hover:bg-[#1464f4] hover:border-[#1464f4]">
+                    <button className="group w-10 h-10 rounded-full cursor-pointer border-2 border-white flex items-center justify-center transition-colors duration-300 hover:bg-[#1464f4] hover:border-[#1464f4]">
                       <svg
                         className="w-8 h-8 text-white group-hover:text-white transition-colors duration-300"
                         fill="currentColor"
@@ -41,7 +41,7 @@ export default function News() {
                 )}
               </div>
               <div className="flex items-center px-4 py-4 flex-1">
-                <h3 className="text-[17px] text-[#333333] relative after:content-[''] after:block after:w-[30px] after:h-[2px] after:bg-[rgba(0,0,0,0.1)] after:mt-1 hover:text-[#00adef]">
+                <h3 className="text-[17px] text-[#333333] relative after:content-[''] after:block after:w-[30px] after:h-[2px] after:bg-[rgba(0,0,0,0.1)] after:mt-1 hover:!text-[#00adef]">
                   {article.title}
                 </h3>
 

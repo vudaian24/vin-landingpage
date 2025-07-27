@@ -23,6 +23,7 @@ export default function CarList() {
                 src={car.image}
                 alt={car.name}
                 fill
+                sizes="300px"
                 className="object-contain"
               />
             </div>
