@@ -3,8 +3,11 @@
 import { greenCars } from "@/data/mock-data"
 import { ChevronRight } from "lucide-react"
 import ButtonCustom from "../ui/ButtonCustom"
+import ContactModal from "../ui/ContactModal"
+import { useState } from "react"
 
 export default function VinFastGreen() {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <div
       className="w-full"
@@ -42,11 +45,13 @@ export default function VinFastGreen() {
                 variant="primary"
                 icon={<span>🎁</span>}
                 className="mt-4 w-full px-4 py-2 text-sm font-medium"
+                onClick={() => setIsOpen(true)}
               />
             </div>
           ))}
         </div>
       </div>
+      <ContactModal open={isOpen} onClose={() => setIsOpen(false)} />
     </div>
   )
 }
