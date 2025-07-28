@@ -18,36 +18,39 @@ export default function CarList() {
             key={index}
             className="px-[15px] pb-[30px] flex flex-col items-center text-center"
           >
-            <div className="relative w-[300px] h-[160px] mb-4">
+            <div className="relative w-full lg:max-w-[330px] aspect-[38/25] mx-auto mb-4">
               <Image
                 src={car.image}
                 alt={car.name}
                 fill
-                sizes="300px"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-contain"
               />
             </div>
-            <div className='flex flex-col items-start w-full px-5'>
-              <h3 className="font-bold text-lg">{car.name}</h3>
-              <p className="text-[#1464f4] font-semibold text-sm mt-1 mb-4">
-                GIÁ TỪ: {car.price}
-              </p>
-            </div>
-            <div className="flex gap-2 w-full px-5">
-              <ButtonCustom
-                label="BÁO GIÁ LĂN BÁNH"
-                variant="primary"
-                icon={<Gift size={14} />}
-                className="text-[12px] px-3 py-1"
-                onClick={() => setIsOpen(true)}
-              />
-              <ButtonCustom
-                label="XEM XE"
-                variant="outline"
-                icon={<Menu size={14} />}
-                className="text-[12px] px-3 py-1 cursor-pointer"
-                href={car.link}
-              />
+            <div className="w-full px-4 md:px-10 lg:px-4">
+              <div className="flex flex-col items-start w-full">
+                <h3 className="font-bold text-lg">{car.name}</h3>
+                <p className="text-[#1464f4] font-semibold text-sm mt-1 mb-4">
+                  GIÁ TỪ: {car.price}
+                </p>
+              </div>
+
+              <div className="flex w-full overflow-hidden gap-2 justify-start">
+                <ButtonCustom
+                  label="BÁO GIÁ LĂN BÁNH"
+                  variant="primary"
+                  icon={<Gift size={14} />}
+                  className="text-[12px] px-3 py-1 flex-1 sm:flex-none w-full sm:w-auto whitespace-nowrap"
+                  onClick={() => setIsOpen(true)}
+                />
+                <ButtonCustom
+                  label="XEM XE"
+                  variant="outline"
+                  icon={<Menu size={14} />}
+                  className="text-[12px] px-3 py-1 flex-1 sm:flex-none w-full sm:w-auto"
+                  href={car.link}
+                />
+              </div>
             </div>
           </div>
         ))}
