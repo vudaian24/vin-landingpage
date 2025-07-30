@@ -1,6 +1,7 @@
 "use client"
 
 import { Message } from "@/lib/constants"
+import Image from "next/image"
 import { useState } from "react"
 
 const initialMessages: Message[] = [
@@ -51,6 +52,8 @@ export default function ChatSupport() {
       <div className={`bg-gray-800 text-white ${!isCollapsed ? "px-1" : "px-4"} py-1 flex items-center justify-between`}>
         <h1 className="text-base font-medium !text-white">Hỗ trợ</h1>
         <button
+          type="button"
+          aria-label="Toggle chat"
           onClick={() => setIsCollapsed((prev) => !prev)}
           className="text-white hover:bg-gray-700 ml-1 rounded cusor-pointer"
         >
@@ -72,8 +75,14 @@ export default function ChatSupport() {
           <div className="p-2 space-y-3 min-h-[300px] bg-white">
             {messages.map((msg) => (
               <div key={msg.id} className="flex items-start gap-3">
-                <div className={`w-8 h-8 rounded-full overflow-hidden bg-gray-200 flex-shrink-0 ${msg.type === "support" ? "" : "p-1"}`}>
-                  <img src={msg.avatar} alt={msg.name} className="w-full h-full object-cover" />
+                <div className={`w-8 h-8 rounded-full overflow-hidden bg-gray-200 flex-shrink-0 relative ${msg.type === "support" ? "" : "p-1"}`}>
+                  <Image
+                    src={msg.avatar}
+                    alt={msg.name}
+                    className="object-cover" // Giữ nguyên object-cover
+                    fill // Sử dụng fill để ảnh lấp đầy container
+                    sizes="32px" // Kích thước cố định 8x8 Tailwind class tương đương 32x32px
+                  />
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
@@ -105,6 +114,8 @@ export default function ChatSupport() {
                 onKeyDown={(e) => e.key === "Enter" && handleSend()}
               />
               <button
+                type="button"
+                aria-label="Send message"
                 onClick={handleSend}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
               >

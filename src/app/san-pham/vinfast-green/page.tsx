@@ -5,6 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "VinFast Green",
+  description: "VinFast Green",
 };
 
 export default function VinFastGreen() {

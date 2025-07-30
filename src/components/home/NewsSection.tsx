@@ -61,7 +61,7 @@ const NewsSection = () => {
               className="w-full h-full object-cover rounded"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <button onClick={() => setIsOpen(true)} className="group w-[60px] h-[60px] rounded-full cursor-pointer border-2 border-white flex items-center justify-center transition-colors duration-300 hover:bg-[#1464f4] hover:border-[#1464f4]">
+              <button aria-label="Play video" onClick={() => setIsOpen(true)} className="group w-[60px] h-[60px] rounded-full cursor-pointer border-2 border-white flex items-center justify-center transition-colors duration-300 hover:bg-[#1464f4] hover:border-[#1464f4]">
                 <svg
                   className="w-8 h-8 text-white group-hover:text-white transition-colors duration-300"
                   fill="currentColor"
@@ -88,7 +88,7 @@ const NewsSection = () => {
                     />
                     {index === 0 && (
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <button className="group w-12 h-12 rounded-full border-2 border-white cursor-pointer flex items-center justify-center transition-colors duration-300 hover:bg-[#1464f4] hover:border-[#1464f4]">
+                        <button aria-label="Play video" onClick={() => setIsOpen(true)} className="group w-12 h-12 rounded-full border-2 border-white cursor-pointer flex items-center justify-center transition-colors duration-300 hover:bg-[#1464f4] hover:border-[#1464f4]">
                           <svg
                             className="w-5 h-5 text-white group-hover:text-white transition-colors duration-300"
                             fill="currentColor"

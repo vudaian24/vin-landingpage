@@ -73,7 +73,7 @@ export default function Header() {
         <div className="max-w-[1080px] mx-auto flex items-center justify-between px-4 py-1">
           {/* Mobile: Menu + Logo + Search */}
           <div className="flex items-center justify-between w-full md:hidden">
-            <button onClick={() => setOpen(!open)} aria-label="Toggle menu" className='cursor-pointer'>
+            <button type="button" araria-label="Toggle menu" onClick={() => setOpen(!open)} aria-label="Toggle menu" className='cursor-pointer'>
               <Menu className="h-6 w-6 text-gray-700" />
             </button>
 

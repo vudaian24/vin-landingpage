@@ -23,16 +23,20 @@ export default function SortDropdown({ onChange }: SortDropdownProps) {
   }
 
   return (
-    <select
-      className="border border-gray-300 rounded px-2 py-2 text-sm focus:outline-none"
-      value={selected}
-      onChange={handleChange}
-    >
-      {sortOptions.map((option) => (
-        <option key={option} value={option}>
-          {option}
-        </option>
-      ))}
-    </select>
+    <>
+      <label htmlFor="sort-options-select" className="sr-only">Sắp xếp theo</label>
+      <select
+        id="sort-options-select"
+        className="border border-gray-300 rounded px-2 py-2 text-sm focus:outline-none"
+        value={selected}
+        onChange={handleChange}
+      >
+        {sortOptions.map((option) => (
+          <option key={option} value={option}>
+            {option}
+          </option>
+        ))}
+      </select>
+    </>
   )
 }

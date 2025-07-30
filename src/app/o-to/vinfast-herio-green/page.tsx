@@ -7,12 +7,14 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'VinFast Herio Green',
+  description: 'VinFast Herio Green',
 }
 export default async function ProductDetailPage() {
   const carVariants = [
-    { 
-      name: 'vinfast-herio-green', 
-      image: '/images/vinfast-herio-green/vinfast-herio-green.png' },
+    {
+      name: 'vinfast-herio-green',
+      image: '/images/vinfast-herio-green/vinfast-herio-green.png'
+    },
     {
       name: 'vinfast-herio-green',
       image: '/images/vinfast-herio-green/vinfast-herio-green-250318-c02-1200x675.jpg',
@@ -206,13 +208,13 @@ export default async function ProductDetailPage() {
                 src="/images/vinfast-herio-green/vinfast-herio-green-250318-nt34.jpg"
                 alt="thong so ky thuat"
               />
-            <img
-              src="/images/vinfast-herio-green/vinfast-herio-green-250318-nt32.jpg"
-              alt="thong so ky thuat"
-            /><img
-              src="/images/vinfast-herio-green/vinfast-herio-green-250318-nt32.jpg"
-              alt="thong so ky thuat"
-            />
+              <img
+                src="/images/vinfast-herio-green/vinfast-herio-green-250318-nt32.jpg"
+                alt="thong so ky thuat"
+              /><img
+                src="/images/vinfast-herio-green/vinfast-herio-green-250318-nt32.jpg"
+                alt="thong so ky thuat"
+              />
             </div>
           </section>
         </div>

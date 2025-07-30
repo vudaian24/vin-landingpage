@@ -33,6 +33,7 @@ export default function NotFoundPage() {
               />
               <button
                 type="submit"
+                aria-label="Search"
                 className="bg-[#00adef] hover:bg-[#1464f4] px-2.5 border border-[#00adef] flex items-center justify-center"
               >
                 <Search size={18} className="text-white" />

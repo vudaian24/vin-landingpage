@@ -7,11 +7,12 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'VinFast Nerio Green',
+  description: 'VinFast Nerio Green',
 }
 export default async function ProductDetailPage() {
   const carVariants = [
     {
-      name: 'vinfast-nerio-green', 
+      name: 'vinfast-nerio-green',
       image: '/images/vinfast-nerio-green/vinfast-nerio-green.png'
     },
     {

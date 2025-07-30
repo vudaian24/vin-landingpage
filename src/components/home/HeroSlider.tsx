@@ -55,6 +55,7 @@ export default function HeroSlider(
       {images.map((image, index) => {
         const isCurrent = index === current
         const isPrev = index === prev
+        const isFirstImage = index === 0 && prev === null
 
         let animationClass = ''
         if (isCurrent && prev !== null) {
@@ -67,14 +68,16 @@ export default function HeroSlider(
           (isCurrent || isPrev) && (
             <div
               key={index}
-              className={`absolute inset-0 w-full h-full transition-opacity duration-700 ${animationClass} z-0`}
+              className={`absolute inset-0 w-full h-full ${isFirstImage ? '' : 'transition-opacity duration-700'
+                } ${animationClass} z-0`}
             >
               <Image
                 src={image.src}
                 alt={image.alt}
                 fill
                 className="w-full h-full object-cover"
-                priority={isCurrent}
+                priority={isFirstImage || isCurrent}
+                sizes="100vw"
               />
             </div>
           )
@@ -109,7 +112,7 @@ export default function HeroSlider(
               if (index === current) return
               changeSlide(index, index > current ? 'right' : 'left')
             }}
-            className={`h-2.5 w-2.5 rounded-full transition-all duration-300 ${current === index ? 'bg-white' : 'bg-white/50'}`}
+            className={`h-3 w-3 rounded-full transition-all duration-300 cursor-pointer ${current === index ? 'bg-white' : 'bg-white/50'}`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

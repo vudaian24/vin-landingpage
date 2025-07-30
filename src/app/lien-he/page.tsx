@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <div
       className="w-full min-h-[550px] bg-cover bg-center text-white flex items-center justify-center"
-      style={{ backgroundImage: "url('/images/vinfast-contact-bg.jpg')" }}
+      style={{ backgroundImage: "url('/images/vinfast-contact-bg.webp')" }}
     >
       <div className="max-w-[1065px] w-full px-[10px]">
         <p className="text-[20px] font-bold text-white">SHOWROOM</p>

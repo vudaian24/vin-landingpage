@@ -21,13 +21,13 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-2 !text-white">FOLLOW</h3>
             <div className="flex gap-4 mt-2">
-              <a href="mailto:tuantv.0308@gmail.com" className="p-2 rounded-full bg-white text-black hover:bg-gray-200">
+              <a href="mailto:tuantv.0308@gmail.com" aria-label="Gửi email" className="p-2 rounded-full bg-white text-black hover:bg-gray-200">
                 <Mail size={20} />
               </a>
-              <a href="tel:0783382001" className="p-2 rounded-full bg-white text-black hover:bg-gray-200">
+              <a href="tel:0783382001" aria-label="Gọi điện thoại" className="p-2 rounded-full bg-white text-black hover:bg-gray-200">
                 <Phone size={20} />
               </a>
-              <a href="#" className="p-2 rounded-full bg-white text-black hover:bg-gray-200">
+              <a href="https://www.youtube.com/@vinfastthanglong" aria-label="Kênh YouTube" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white text-black hover:bg-gray-200">
                 <Youtube size={20} />
               </a>
             </div>
@@ -35,16 +35,16 @@ export default function Footer() {
         </div>
         <div className='flex flex-col md:flex-row md:items-center justify-between'>
           <div className="text-[12px] flex flex-col items-start">
-            <div className="flex gap-6 mb-2 md:mb-0 text-gray-500 border-b pb-1 border-gray-700">
+            <div className="flex gap-6 mb-2 md:mb-0 text-gray-300 border-b pb-1 border-gray-700">
               <Link className='hover:text-white' href="/">TRANG CHỦ</Link>
               <Link className='hover:text-white' href="/trai-nghiem-khach-hang">TRẢI NGHIỆM KHÁCH HÀNG</Link>
               <Link className='hover:text-white' href="/lien-he">LIÊN HỆ</Link>
             </div>
-            <div className="text-gray-400 pt-1 text-[12px]">
+            <div className="text-gray-200 pt-1 text-[12px]">
               Copyright 2025 © https://vinfastthanglong.com
             </div>
           </div>
-          <a className='text-gray-400 hover:text-white text-[14px]' href="#">VinFast Thăng Long - Hà Nội</a>
+          <a className='text-gray-200 hover:text-white text-[14px]' href="#">VinFast Thăng Long - Hà Nội</a>
         </div>
       </div>
     </footer>

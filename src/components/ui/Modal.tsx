@@ -38,6 +38,8 @@ export default function Modal({ open, onClose, children, className }: ModalProps
       >
         {/* Close Button */}
         <button
+          type="button"
+          aria-label="Close modal"
           className="absolute top-2 right-2 text-gray-600 hover:text-black z-50 cursor-pointer"
           onClick={onClose}
         >

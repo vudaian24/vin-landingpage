@@ -37,7 +37,7 @@ export default function ButtonCustom({
   }
 
   return (
-    <button className={classes} onClick={onClick}>
+    <button type="button" aria-label={label} className={classes} onClick={onClick}>
       {icon && <span>{icon}</span>}
       {label}
     </button>

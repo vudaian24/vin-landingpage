@@ -4,13 +4,14 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Trải nghiệm khách hàng",
+  description: "Trai nghiem khach hang",
 };
 
 export default function TraiNghiemKhachHang() {
   return (
     <div
       className="w-full min-h-[550px] bg-cover bg-center text-white flex items-center justify-center"
-      style={{ backgroundImage: "url('/images/vinfast-contact-bg.jpg')" }}
+      style={{ backgroundImage: "url('/images/vinfast-contact-bg.webp')" }}
     >
       <div className="max-w-[1065px] w-full px-[10px]">
         <h2 className="text-[30px] font-bold leading-9 !text-white">
