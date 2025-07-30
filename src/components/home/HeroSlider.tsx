@@ -104,7 +104,7 @@ export default function HeroSlider(
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-3 sm:bottom-5 left-1/2 z-50 flex -translate-x-1/2 gap-2">
+      <div className="absolute bottom-3 sm:bottom-5 left-1/2 z-50 flex -translate-x-1/2 ">
         {images.map((_, index) => (
           <button
             key={index}
@@ -112,9 +112,13 @@ export default function HeroSlider(
               if (index === current) return
               changeSlide(index, index > current ? 'right' : 'left')
             }}
-            className={`h-3 w-3 rounded-full transition-all duration-300 cursor-pointer ${current === index ? 'bg-white' : 'bg-white/50'}`}
+            className={`relative p-3 flex items-center justify-center rounded-full transition-all duration-300 cursor-pointer`}
             aria-label={`Go to slide ${index + 1}`}
-          />
+          >
+            <span
+              className={`block h-4 w-4 rounded-full ${current === index ? 'bg-white' : 'bg-white/50'}`}
+            />
+          </button>
         ))}
       </div>
     </div>
