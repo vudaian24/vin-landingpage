@@ -134,7 +134,7 @@ const res = await fetch(`https://api.telegram.org/bot7599022304:AAGNEH92jz9Z0R5K
             </div>
             <div className="flex items-center justify-center">
               <button
-                className="bg-blue-600 text-white w-fit px-4 py-2 hover:bg-blue-700 text-sm font-semibold"
+                className="bg-blue-600 text-white w-fit px-4 py-2 hover:bg-blue-700 text-sm font-semibold cursor-pointer"
                 onClick={ handleSubmit}
               >
                 NHẬN THÔNG TIN
