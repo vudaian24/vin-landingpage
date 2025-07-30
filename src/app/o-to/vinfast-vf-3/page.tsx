@@ -8,6 +8,7 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'VinFast VF 3',
+  description: 'VinFast VF 3',
 }
 export default async function ProductDetailPage() {
   const carVariants = [
@@ -253,12 +254,12 @@ export default async function ProductDetailPage() {
                 phong cách sống của riêng bạn!
               </p>
               <ImageWithCaption
-                  src="/images/vinfast-vf-3/vinfast-vf3-240510-g22-1200x675.jpg"
-                  alt="Nội thất VF 3"
-                  caption="Nội thất VF 3"
-                  className="pt-4"
-                  capTionCenter={true}
-                />
+                src="/images/vinfast-vf-3/vinfast-vf3-240510-g22-1200x675.jpg"
+                alt="Nội thất VF 3"
+                caption="Nội thất VF 3"
+                className="pt-4"
+                capTionCenter={true}
+              />
             </div>
             <div>
               <div className="mx-auto mt-10 max-w-6xl">

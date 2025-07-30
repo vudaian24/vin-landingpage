@@ -7,6 +7,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Pin và trạm sạc",
+  description: "Pin và trạm sạc",
 };
 
 export default function BatteryAndChargingStations() {
@@ -14,7 +15,7 @@ export default function BatteryAndChargingStations() {
     <div className="w-full">
       <div
         className="w-full min-h-[550px] bg-cover bg-center text-white flex items-center justify-center relative"
-        style={{ backgroundImage: "url('/images/vinfast-pin-va-sac-bg.jpg')" }}
+        style={{ backgroundImage: "url('/images/vinfast-pin-va-sac-bg.webp')" }}
       >
         <div className="max-w-[1300px] w-full px-[10px] font-bold text-white">
           <p className="text-[14px]">PIN VÀ TRẠM SẠC XE ĐIỆN</p>
@@ -38,7 +39,7 @@ export default function BatteryAndChargingStations() {
                 />
                 {article.video && (
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <button className="group w-10 h-10 cursor-pointer rounded-full border-2 border-white flex items-center justify-center transition-colors duration-300 bg-transparent bg-opacity-40 hover:bg-[#1464f4] hover:border-[#1464f4]"> {/* Added bg-black opacity for better visibility */}
+                    <button aria-label="Play video" className="group w-10 h-10 cursor-pointer rounded-full border-2 border-white flex items-center justify-center transition-colors duration-300 bg-transparent bg-opacity-40 hover:bg-[#1464f4] hover:border-[#1464f4]"> {/* Added bg-black opacity for better visibility */}
                       <svg
                         className="w-5 h-5 text-white group-hover:text-white transition-colors duration-300"
                         fill="currentColor"

@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 interface ProductCardProps {
   name: string
   price: string
@@ -21,16 +23,20 @@ export default function ProductCard({
         <div className="image-fade_in_back relative w-full aspect-[765/430]">
           <a href={link} aria-label={name} className="block relative w-full h-full">
             {/* Ảnh chính */}
-            <img
+            <Image
               src={imageUrl}
               alt={name}
-              className="w-full h-full object-cover transition-opacity duration-300 ease-in-out"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className="object-cover transition-opacity duration-300 ease-in-out"
             />
             {/* Ảnh hover */}
             {canHover && imageUrlHover && (
-              <img
+              <Image
                 src={imageUrlHover}
                 alt={`${name} Hover`}
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
                 className="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
               />
             )}

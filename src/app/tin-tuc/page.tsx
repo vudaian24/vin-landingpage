@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: "Tin tức",
+  description: "Tin tức",
 };
 
 export default function News() {
@@ -25,10 +26,11 @@ export default function News() {
                   alt={article.title}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 767px) 100vw, (max-width: 1023px) 220px, 310px"
                 />
                 {article.video && (
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <button className="group w-10 h-10 rounded-full cursor-pointer border-2 border-white flex items-center justify-center transition-colors duration-300 hover:bg-[#1464f4] hover:border-[#1464f4]">
+                    <button aria-label="Play video" className="group w-10 h-10 rounded-full cursor-pointer border-2 border-white flex items-center justify-center transition-colors duration-300 hover:bg-[#1464f4] hover:border-[#1464f4]">
                       <svg
                         className="w-8 h-8 text-white group-hover:text-white transition-colors duration-300"
                         fill="currentColor"

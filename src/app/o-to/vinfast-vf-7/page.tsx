@@ -8,6 +8,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "VinFast VF 7",
+  description: "VinFast VF 7",
 };
 export default async function ProductDetailPage() {
   const carVariants =

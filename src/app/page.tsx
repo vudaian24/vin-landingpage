@@ -7,6 +7,7 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: "VinFast Thăng Long",
+  description: "VinFast Thăng Long - Đại lý phân phối xe điện VinFast chính hãng",
 };
 
 export default function Home() {

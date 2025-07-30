@@ -24,6 +24,7 @@ export function Tabs({ tabs, defaultTab, className = "" }: TabsProps) {
         <nav className="flex items-center gap-1.5" role="tablist">
           {tabs.map((tab) => (
             <button
+              aria-label={tab.label}
               key={tab.id}
               role="tab"
               aria-selected={activeTab === tab.id}

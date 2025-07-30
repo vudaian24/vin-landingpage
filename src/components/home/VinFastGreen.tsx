@@ -5,13 +5,14 @@ import { ChevronRight } from "lucide-react"
 import ButtonCustom from "../ui/ButtonCustom"
 import ContactModal from "../ui/ContactModal"
 import { useState } from "react"
+import Image from "next/image"
 
 export default function VinFastGreen() {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <div
       className="w-full"
-      style={{ backgroundImage: 'url("/images/vinfast-green-bg.jpg")' }}
+      style={{ backgroundImage: 'url("/images/vinfast-green-bg.webp")' }}
     >
       <div className="mx-auto max-w-[1080px] px-4 pb-[100px] pt-[50px] text-center">
         <h2 className="text-[26px] font-semibold text-black">VINFAST GREEN</h2>
@@ -23,7 +24,15 @@ export default function VinFastGreen() {
               key={car.name}
               className="flex flex-col items-center justify-between rounded bg-white px-[10px] pt-[0px] pb-[20px]"
             >
-              <img src={car.image} alt={car.name} className="h-auto w-full object-contain" />
+              <div className="relative h-[180px] w-full">
+                <Image
+                  src={car.image}
+                  alt={car.name}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 25vw"
+                />
+              </div>
               <div className="w-full">
                 <h3 className="mt-4 text-sm font-bold text-black">{car.name}</h3>
                 <p className="text-[14px] font-bold text-[#1464f4] mt-1">GIÁ TỪ: {car.price}</p>

@@ -37,7 +37,7 @@ const PhoneBar = () => {
         alt="phone-icon"
         className='w-[25px] h-[25px] shake-rotate'
       />
-      <span className='text-base'>0783382001</span>
+      <span className='text-base text-white'>0783382001</span>
     </Link>
   )
 }

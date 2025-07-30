@@ -1,7 +1,7 @@
 'use client'
-
+import Image from 'next/image';
 import React, { useRef, useState } from 'react'
-import { ChevronLeft, ChevronRight, Expand, ExpandIcon, Maximize2 } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react'
 import Modal from '../ui/Modal'
 
 interface CarVariant {
@@ -59,6 +59,7 @@ export default function CarColorSlider({ carVariants }: CarColorSliderProps) {
       <div className="max-w-5xl mx-auto">
         <div className="relative group w-full flex justify-center bg-white rounded-xl overflow-hidden">
           <button
+            aria-label="Previous"
             onClick={() => changeIndex('left')}
             className="absolute left-1 top-1/2 p-2 cursor-pointer rounded-full opacity-0 z-20 group-hover:opacity-100 group-hover:-translate-y-1/2 translate-y-0 transition-all duration-300"
           >
@@ -78,17 +79,21 @@ export default function CarColorSlider({ carVariants }: CarColorSliderProps) {
               }
 
               return (
-                <img
+                <Image
                   key={index}
                   src={car.image}
                   alt={car.name}
                   className={`${className} w-full h-full object-cover`}
+                  fill
+                  priority={index === selectedIndex}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 800px"
                 />
               )
             })}
           </div>
 
           <button
+            aria-label="Next"
             onClick={() => changeIndex('right')}
             className="absolute right-1 top-1/2 cursor-pointer p-2 rounded-full opacity-0 z-10 group-hover:opacity-100 group-hover:-translate-y-1/2 translate-y-0 transition-all duration-300"
           >
@@ -96,6 +101,7 @@ export default function CarColorSlider({ carVariants }: CarColorSliderProps) {
           </button>
           <div className="mt-3 pl-2 absolute bottom-2.5 left-1.5 z-40">
             <button
+              aria-label="Maximize"
               className="w-9 h-9 border-2 border-[#E0E0E0] rounded-full flex items-center justify-center text-gray-500 hover:bg-[#1464f4] hover:border-[#1464f4] hover:text-white cursor-pointer"
               onClick={() => setOpenModal(true)}
             >
@@ -123,10 +129,12 @@ export default function CarColorSlider({ carVariants }: CarColorSliderProps) {
                   : 'border-transparent opacity-70 hover:opacity-100'
                   }`}
               >
-                <img
+                <Image
                   src={car.image}
                   alt={car.name}
                   className="w-full h-full object-cover rounded"
+                  width={133}
+                  height={74}
                 />
               </div>
             ))}
@@ -136,6 +144,13 @@ export default function CarColorSlider({ carVariants }: CarColorSliderProps) {
 
       <Modal open={openModal} onClose={() => setOpenModal(false)}>
         <img src={carVariants[selectedIndex].image} alt={carVariants[selectedIndex].name} />
+        <Image
+          src={carVariants[selectedIndex].image}
+          alt={carVariants[selectedIndex].name}
+          className={`w-full h-full object-cover`}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 800px"
+        />
       </Modal>
     </>
   )

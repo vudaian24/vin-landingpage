@@ -5,6 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Oto VinFast",
+  description: "Oto VinFast",
 };
 
 export default function OtoVinFast() {
