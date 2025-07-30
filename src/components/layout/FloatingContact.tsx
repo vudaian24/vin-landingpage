@@ -29,7 +29,7 @@ export default function FloatingContact() {
 
 const PhoneBar = () => {
   return (
-    <Link href={"tel:0783382001"} className='absolute hidden md:flex w-[162px] items-center left-3 gap-4 whitespace-nowrap text-white bg-[#00adef] text-base pl-[10px] pr-[15px] top-3 py-[7px] rounded-full'>
+    <Link href={"tel:0783382001"} className='absolute hidden md:flex w-[162px] items-center left-3 gap-4 whitespace-nowrap text-white bg-cyan-800 text-base pl-[10px] pr-[15px] top-3 py-[7px] rounded-full'>
       <Image
         src="https://vinfastautolongbien.vn/wp-content/plugins/button-contact-vr/img/phone.png"
         width={25}
