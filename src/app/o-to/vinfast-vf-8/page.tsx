@@ -1,4 +1,3 @@
-import HeroSlider from "@/components/home/HeroSlider";
 import CarColorSlider from "@/components/o-to/CarColorSlider";
 import { ProductInfo } from "@/components/o-to/ProductInfo";
 import { Tabs } from "@/components/o-to/Tabs";
@@ -7,9 +6,10 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "VinFast VF 8",
-  description: "VinFast VF 8",
-};
+  title: "VinFast VF 8 – SUV điện với quãng đường 471 km, sạc nhanh 31 phút, công suất 402 hp",
+  description: "VinFast VF 8 nổi bật với thiết kế cá nhân hóa, nội thất sang trọng, công nghệ trợ lý ảo ViVi 2.0, hệ thống an toàn hiện đại, và hiệu suất mạnh mẽ với quãng đường 471 km mỗi lần sạc đầy.",
+}
+
 export default async function ProductDetailPage() {
   const carVariants = [
     { name: 'vinfast-vf-8', image: '/images/vinfast-vf-8/vinfast-vf-8-250207-c02-765x430.jpg' },

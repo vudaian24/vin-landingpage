@@ -1,4 +1,3 @@
-import HeroSlider from "@/components/home/HeroSlider";
 import CarColorSlider from "@/components/o-to/CarColorSlider";
 import { ProductInfo } from "@/components/o-to/ProductInfo";
 import { Tabs } from "@/components/o-to/Tabs";
@@ -7,9 +6,10 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "VinFast VF 7",
-  description: "VinFast VF 7",
-};
+  title: "VinFast VF 7 – SUV điện hiện đại với quãng đường 431 km, tăng tốc 5,8 giây",
+  description: "Khám phá VinFast VF 7 với thiết kế “Vũ trụ phi đối xứng”, quãng đường 431 km mỗi lần sạc, tăng tốc 0-100 km/h trong 5,8 giây, trang bị 8 túi khí và nhiều tính năng an toàn tiên tiến.",
+}
+
 export default async function ProductDetailPage() {
   const carVariants =
     [

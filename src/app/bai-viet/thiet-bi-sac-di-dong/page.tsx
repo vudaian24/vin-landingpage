@@ -1,4 +1,11 @@
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Thiết bị sạc di động VinFast",
+  description: "Khám phá các thiết bị sạc di động đa dạng của VinFast, đáp ứng nhu cầu sạc tiện lợi cho xe ô tô điện.",
+};
+
 
 export default function ThietBiSacDiDong() {
   return (

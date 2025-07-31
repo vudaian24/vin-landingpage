@@ -1,6 +1,11 @@
-import { articles } from "@/data/mock-data";
+import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Hướng dẫn sử dụng trạm sạc VinFast – Dễ dàng và tiện lợi",
+  description: "Hướng dẫn chi tiết cách sử dụng trạm sạc ô tô điện VinFast, theo dõi tình trạng sạc, thanh toán và quản lý dịch vụ nhanh chóng qua ứng dụng VinFast.",
+};
+
 
 export default function HuongDanSuDungTramSac() {
   return (

@@ -1,4 +1,3 @@
-import HeroSlider from '@/components/home/HeroSlider'
 import CarColorSlider from '@/components/o-to/CarColorSlider'
 import { ProductInfo } from '@/components/o-to/ProductInfo'
 import { Tabs } from '@/components/o-to/Tabs'
@@ -7,9 +6,11 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'VinFast VF 3',
-  description: 'VinFast VF 3',
+  title: 'VinFast VF 3 – Xe điện nhỏ gọn, công nghệ tiên tiến, hiệu năng tối ưu',
+  description:
+    'Khám phá VinFast VF 3 – mẫu xe điện 4 chỗ nhỏ gọn, thiết kế hiện đại, quãng đường di chuyển 205-210 km, thời gian sạc nhanh 36 phút (10%-70%). Trải nghiệm di chuyển xanh, tiện nghi và phong cách sống năng động cùng VinFast VF 3.',
 }
+
 export default async function ProductDetailPage() {
   const carVariants = [
     { name: 'vinfast-vf-3', image: '/images/vinfast-vf-3/vinfast-vf3-240510-c9.jpg' },

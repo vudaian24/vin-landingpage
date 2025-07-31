@@ -3,8 +3,8 @@ import { Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Trải nghiệm khách hàng",
-  description: "Trai nghiem khach hang",
+  title: "Trải nghiệm khách hàng tại VinFast Thăng Long",
+  description: "Lắng nghe cảm nhận và sự hài lòng từ khách hàng đã đồng hành cùng VinFast Thăng Long. Cảm ơn Quý khách đã tin tưởng lựa chọn chúng tôi.",
 };
 
 export default function TraiNghiemKhachHang() {

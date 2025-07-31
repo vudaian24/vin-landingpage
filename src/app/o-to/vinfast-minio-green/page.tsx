@@ -6,9 +6,10 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "VinFast Minio Green",
-  description: "VinFast Minio Green",
+  title: "VinFast Minio Green - Xe điện 4 chỗ, quãng đường 170 km",
+  description: "VinFast Minio Green - xe ô tô điện 4 chỗ nhỏ gọn, công suất 20 kW, quãng đường đi được 170 km mỗi lần sạc, thời gian sạc nhanh 30 phút, thiết kế tối ưu cho đô thị.",
 };
+
 export default async function ProductDetailPage() {
   const carVariants = [
     { name: 'vinfast-minio-green', image: '/images/vinfast-minio-green/vinfast-minio-green.png' },

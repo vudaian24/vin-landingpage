@@ -7,39 +7,6 @@ interface LayoutPostProps {
   children: React.ReactNode;
 }
 
-const socialLinks = [
-  {
-    name: "Facebook",
-    icon: Facebook,
-    href: "https://facebook.com",
-    hoverColor: "hover:bg-blue-600 hover:border-blue-600",
-  },
-  {
-    name: "Twitter",
-    icon: Twitter,
-    href: "https://twitter.com",
-    hoverColor: "hover:bg-sky-500 hover:border-sky-500",
-  },
-  {
-    name: "Email",
-    icon: Mail,
-    href: "mailto:contact@example.com",
-    hoverColor: "hover:bg-gray-600 hover:border-gray-600",
-  },
-  {
-    name: "Pinterest",
-    icon: Pinterest,
-    href: "https://pinterest.com",
-    hoverColor: "hover:bg-red-600 hover:border-red-600",
-  },
-  {
-    name: "LinkedIn",
-    icon: Linkedin,
-    href: "https://linkedin.com",
-    hoverColor: "hover:bg-blue-700 hover:border-blue-700",
-  },
-]
-
 export default function LayoutPost({ children }: LayoutPostProps) {
   return (
     <div className="w-full flex justify-center overflow-x-hidden">
