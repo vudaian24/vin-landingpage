@@ -27,6 +27,9 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="google-site-verification" content="aIXH3AZmTELlta_3WREWmdvuhGQvactgPT5f2JRhSmM" />
+      </head>
       <body
         className={cn(
           'min-h-screen scroll-smooth antialiased font-sans bg-background text-foreground',
