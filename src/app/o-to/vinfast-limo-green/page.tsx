@@ -6,9 +6,10 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "VinFast Limo Green",
-  description: "VinFast Limo Green",
+  title: "VinFast Limo Green - Xe điện 7 chỗ, quãng đường 450 km",
+  description: "VinFast Limo Green - xe ô tô điện 7 chỗ rộng rãi, vận hành êm ái, thời gian sạc nhanh 30 phút, công suất 150 kW, lý tưởng cho gia đình và dịch vụ.",
 };
+
 export default async function ProductDetailPage() {
   const carVariants = [
     { name: 'vinfast-limo-green', image: '/images/vinfast-limo-green/vinfast-limo-green.png' },

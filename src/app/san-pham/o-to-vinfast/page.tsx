@@ -4,8 +4,8 @@ import { vinfastCars } from "@/data/mock-data";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Oto VinFast",
-  description: "Oto VinFast",
+  title: "Ô Tô VinFast – Các mẫu xe điện VinFast chính hãng tại Hà Nội",
+  description: "Khám phá các mẫu ô tô điện VinFast mới nhất tại VinFast Thăng Long. Thông tin chi tiết, giá bán, chính sách ưu đãi và hỗ trợ mua xe trả góp.",
 };
 
 export default function OtoVinFast() {

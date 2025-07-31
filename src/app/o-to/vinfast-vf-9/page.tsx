@@ -1,4 +1,3 @@
-import HeroSlider from "@/components/home/HeroSlider";
 import CarColorSlider from "@/components/o-to/CarColorSlider";
 import { ProductInfo } from "@/components/o-to/ProductInfo";
 import { Tabs } from "@/components/o-to/Tabs";
@@ -7,9 +6,10 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "VinFast VF 9",
-  description: "VinFast VF 9",
+  title: "VinFast VF 9 - SUV điện hạng sang 7 chỗ | Công nghệ tiên tiến, thiết kế đẳng cấp",
+  description: "Khám phá VinFast VF 9 - mẫu SUV điện cỡ lớn 7 chỗ hạng sang với quãng đường di chuyển lên đến 626 km mỗi lần sạc, công suất 402 hp mạnh mẽ, nội thất tiện nghi và công nghệ hiện đại hàng đầu. Trải nghiệm sự sang trọng và đẳng cấp cùng VinFast VF 9 ngay hôm nay.",
 };
+
 export default async function ProductDetailPage() {
   const carVariants = [
     { name: 'vinfast-vf-9', image: '/images/vinfast-vf-9/vinfast-231207_0024_vf-9-765x430.jpg' },

@@ -6,9 +6,10 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'VinFast Herio Green',
-  description: 'VinFast Herio Green',
-}
+  title: "VinFast Herio Green - Xe điện dịch vụ mạnh mẽ, linh hoạt",
+  description: "Khám phá VinFast Herio Green: xe ô tô điện 5 chỗ với quãng đường 326 km/lần sạc, sạc nhanh 33 phút, công suất 100 kW, thiết kế an toàn và tiện nghi hiện đại.",
+};
+
 export default async function ProductDetailPage() {
   const carVariants = [
     {

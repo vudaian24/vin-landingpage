@@ -6,8 +6,9 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'VinFast Nerio Green',
-  description: 'VinFast Nerio Green',
+  title: 'VinFast Nerio Green - Xe điện 5 chỗ, công suất 110 kW',
+  description:
+    'VinFast Nerio Green - xe ô tô điện 5 chỗ, quãng đường tối đa 318,6 km, thời gian sạc nhanh 27 phút (10%-70%), công suất 110 kW, thiết kế hiện đại, phù hợp di chuyển trong đô thị và đường dài.',
 }
 export default async function ProductDetailPage() {
   const carVariants = [

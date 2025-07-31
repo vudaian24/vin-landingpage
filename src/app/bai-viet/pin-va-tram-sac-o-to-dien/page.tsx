@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 
 const flexiblePackageData = [
@@ -39,6 +40,10 @@ const fixedPackageData = [
   },
 ]
 
+export const metadata: Metadata = {
+  title: "Pin và trạm sạc ô tô điện VinFast – Chính sách thuê pin và hướng dẫn sử dụng",
+  description: "Tìm hiểu các giải pháp sạc và chính sách thuê pin ô tô điện VinFast linh hoạt, tiết kiệm, cùng hướng dẫn sử dụng trạm sạc dễ dàng trên toàn quốc.",
+};
 
 export default function PinVaTramSacOToDien() {
   return (

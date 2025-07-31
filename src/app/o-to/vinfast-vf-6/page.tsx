@@ -6,9 +6,10 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'VinFast VF 6',
-  description: 'VinFast VF 6',
+  title: 'VinFast VF 6 – Xe điện SUV cá tính, công suất mạnh mẽ, quãng đường 339 km',
+  description: 'Khám phá VinFast VF 6 với thiết kế “Cặp đối lập tự nhiên”, công suất 150 kW (201 hp), dung lượng pin 59,6 kW và quãng đường đi được 339 km mỗi lần sạc. Trải nghiệm công nghệ tiên tiến, tinh tế và hiện đại.',
 }
+
 export default async function ProductDetailPage() {
   const carVariants = [
     { name: 'vinfast-vf-6', image: '/images/vinfast-vf-6/vinfast-231207_0064_vf-6.jpg' },
@@ -161,22 +162,6 @@ export default async function ProductDetailPage() {
                 src="/images/vinfast-vf-6/vinfast-vf-6-250309-tskt-b03.jpg"
                 alt="thong so ky thuat"
               />
-              {/* <img
-                src="/images/vinfast-vf-9/vinfast-vf9-241212-tskt-07.jpg"
-                alt="thong so ky thuat"
-              />
-              <img
-                src="/images/vinfast-vf-9/vinfast-vf9-241212-tskt-08.jpg"
-                alt="thong so ky thuat"
-              />
-              <img
-                src="/images/vinfast-vf-9/vinfast-vf9-241212-tskt-09.jpg"
-                alt="thong so ky thuat"
-              />
-              <img
-                src="/images/vinfast-vf-9/vinfast-vf9-241212-tskt-01.jpg"
-                alt="thong so ky thuat"
-              /> */}
             </div>
             <h2 className="my-6 text-[22px] font-bold text-gray-800">VinFast VF 6 Plus</h2>
             <div className="mt-3 flex flex-col gap-3">

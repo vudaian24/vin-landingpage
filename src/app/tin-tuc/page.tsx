@@ -4,9 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Tin tức",
-  description: "Tin tức",
+  title: "Tin tức VinFast – Cập nhật thông tin & ưu đãi mới nhất",
+  description: "Tổng hợp tin tức mới nhất về các dòng xe điện VinFast, chính sách ưu đãi, sự kiện tại đại lý VinFast Thăng Long. Theo dõi để không bỏ lỡ cơ hội sở hữu xe VinFast với giá tốt.",
 };
+
 
 export default function News() {
   return (

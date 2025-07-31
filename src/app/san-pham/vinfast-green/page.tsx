@@ -4,8 +4,8 @@ import { greenCars } from "@/data/mock-data";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "VinFast Green",
-  description: "VinFast Green",
+  title: "VinFast Green – Dịch vụ thuê xe điện VinFast chính hãng",
+  description: "Khám phá VinFast Green – dịch vụ thuê xe điện VinFast chính hãng tại Hà Nội. Lựa chọn đa dạng, chất lượng cao, hỗ trợ linh hoạt cho cá nhân và doanh nghiệp.",
 };
 
 export default function VinFastGreen() {

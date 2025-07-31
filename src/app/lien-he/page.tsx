@@ -3,8 +3,8 @@ import { Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Liên hệ",
-  description: "Home Page",
+  title: "Liên hệ VinFast Thăng Long – Showroom chính hãng tại Hà Nội",
+  description: "Liên hệ VinFast Thăng Long tại Số 68 Trịnh Văn Bô, Hà Nội. Đặt lịch lái thử, tư vấn mua xe và hỗ trợ dịch vụ chính hãng nhanh chóng.",
 };
 
 export default function Contact() {

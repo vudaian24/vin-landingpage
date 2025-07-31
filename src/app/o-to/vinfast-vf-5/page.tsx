@@ -1,4 +1,3 @@
-import HeroSlider from "@/components/home/HeroSlider";
 import CarColorSlider from "@/components/o-to/CarColorSlider";
 import { ProductInfo } from "@/components/o-to/ProductInfo";
 import { Tabs } from "@/components/o-to/Tabs";
