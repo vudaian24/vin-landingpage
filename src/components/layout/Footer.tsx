@@ -33,18 +33,20 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className='flex flex-col md:flex-row md:items-center justify-between'>
-          <div className="text-[12px] flex flex-col items-start">
-            <div className="flex gap-6 mb-2 md:mb-0 text-gray-300 border-b pb-1 border-gray-700">
-              <Link className='hover:text-white' href="/">TRANG CHỦ</Link>
-              <Link className='hover:text-white' href="/trai-nghiem-khach-hang">TRẢI NGHIỆM KHÁCH HÀNG</Link>
-              <Link className='hover:text-white' href="/lien-he">LIÊN HỆ</Link>
+        <div className='flex flex-col items-center md:flex-row md:items-center justify-between px-4 py-6 text-gray-400'>
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            <div className="flex flex-wrap gap-x-4 gap-y-2 mb-2 md:mb-0 text-sm border-b border-gray-700 pb-2">
+              <Link className="hover:text-white transition-colors duration-200" href="/">TRANG CHỦ</Link>
+              <Link className="hover:text-white transition-colors duration-200" href="/trai-nghiem-khach-hang">TRẢI NGHIỆM KHÁCH HÀNG</Link>
+              <Link className="hover:text-white transition-colors duration-200" href="/lien-he">LIÊN HỆ</Link>
+              <Link className="hover:text-white transition-colors duration-200 uppercase" href="/chinh-sach-quyen-rieng-tu">Chính sách quyền riêng tư</Link>
             </div>
-            <div className="text-gray-200 pt-1 text-[12px]">
+
+            <div className="text-xs pt-2">
               Copyright 2025 © https://vinfastthanglong.com
             </div>
           </div>
-          <a className='text-gray-200 hover:text-white text-[14px]' href="#">VinFast Thăng Long - Hà Nội</a>
+          <a className='text-sm text-center md:text-right hover:text-white transition-colors duration-200 mt-4 md:mt-0' href="#">VinFast Thăng Long - Hà Nội</a>
         </div>
       </div>
     </footer>
