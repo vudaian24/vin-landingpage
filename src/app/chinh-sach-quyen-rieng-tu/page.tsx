@@ -161,14 +161,14 @@ export default function ChinhSachQuyenRiengTu() {
           5. Vị trí của thông tin cá nhân
         </h2>
         <p className="mb-4">
-          Cao đẳng Việt Mỹ có địa chỉ trụ ở tại Việt Nam. Tùy thuộc vào phạm vi tương tác của quý khách với Sản Phẩm Của Chúng Tôi, thông tin cá nhân của quý khách có thể được lưu trữ tại hoặc truy cập từ các địa điểm khác ở Việt Nam mà còn có thể từ nhiều quốc gia. Khi chúng tôi chuyển thông tin cá nhân của quý khách đến các quốc gia khác, chúng tôi sẽ đảm bảo rằng thông tin đó được chuyển theo Chính sách quyền riêng tư này và được cho phép theo pháp luật bảo vệ quyền riêng tư hiện hành.
+          VINFAST THĂNG LONG có địa chỉ trụ ở tại Việt Nam. Tùy thuộc vào phạm vi tương tác của quý khách với Sản Phẩm Của Chúng Tôi, thông tin cá nhân của quý khách có thể được lưu trữ tại hoặc truy cập từ các địa điểm khác ở Việt Nam mà còn có thể từ nhiều quốc gia. Khi chúng tôi chuyển thông tin cá nhân của quý khách đến các quốc gia khác, chúng tôi sẽ đảm bảo rằng thông tin đó được chuyển theo Chính sách quyền riêng tư này và được cho phép theo pháp luật bảo vệ quyền riêng tư hiện hành.
         </p>
 
         <h2 className="text-base font-bold mt-8 mb-4">
           6. Cách thức chúng tôi bảo vệ thông tin cá nhân
         </h2>
         <p className="mb-4">
-          Tại Cao đẳng Việt Mỹ bảo mật là ưu tiên cao nhất của chúng tôi. Hệ thống của chúng tôi được thiết kế có tính đến khả năng bảo đảm an toàn và riêng tư cho thông tin của quý khách.
+          Tại VINFAST THĂNG LONG bảo mật là ưu tiên cao nhất của chúng tôi. Hệ thống của chúng tôi được thiết kế có tính đến khả năng bảo đảm an toàn và riêng tư cho thông tin của quý khách.
         </p>
         <ul className="list-disc list-inside pl-4 space-y-1">
           <li>
@@ -240,7 +240,7 @@ export default function ChinhSachQuyenRiengTu() {
         </p>
         <ul className="list-disc list-inside pl-4 space-y-1">
           <li>
-            <span className="font-semibold">Đơn vị Kiểm Soát Thông Tin Cá Nhân:</span> Cao đẳng Việt Mỹ Hà Nội (địa chỉ tại Tòa nhà AMDI Group, Số 1 phố Trịnh Văn Bô, Phường Phương Canh, Q. Nam Từ Liêm, TP. Hà Nội) là đơn vị kiểm soát các thông tin cá nhân được thu thập hoặc xử lý theo Chính sách quyền riêng tư này.
+            <span className="font-semibold">Đơn vị Kiểm Soát Thông Tin Cá Nhân:</span> VINFAST THĂNG LONG Hà Nội (địa chỉ tại Tòa nhà AMDI Group, Số 1 phố Trịnh Văn Bô, Phường Phương Canh, Q. Nam Từ Liêm, TP. Hà Nội) là đơn vị kiểm soát các thông tin cá nhân được thu thập hoặc xử lý theo Chính sách quyền riêng tư này.
           </li>
           <li>
             <span className="font-semibold">Xử lý:</span> Chúng tôi xử lý thông tin cá nhân của quý khách dựa trên một hoặc một số cơ sở pháp lý sau đây:
