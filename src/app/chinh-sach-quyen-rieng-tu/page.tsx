@@ -240,7 +240,7 @@ export default function ChinhSachQuyenRiengTu() {
         </p>
         <ul className="list-disc list-inside pl-4 space-y-1">
           <li>
-            <span className="font-semibold">Đơn vị Kiểm Soát Thông Tin Cá Nhân:</span> VINFAST THĂNG LONG Hà Nội (địa chỉ tại Tòa nhà AMDI Group, Số 1 phố Trịnh Văn Bô, Phường Phương Canh, Q. Nam Từ Liêm, TP. Hà Nội) là đơn vị kiểm soát các thông tin cá nhân được thu thập hoặc xử lý theo Chính sách quyền riêng tư này.
+            <span className="font-semibold">Đơn vị Kiểm Soát Thông Tin Cá Nhân:</span> VINFAST THĂNG LONG Hà Nội (Số 68 Trịnh Văn Bô, Xuân Phương, Nam Từ Liêm, Hà Nội) là đơn vị kiểm soát các thông tin cá nhân được thu thập hoặc xử lý theo Chính sách quyền riêng tư này.
           </li>
           <li>
             <span className="font-semibold">Xử lý:</span> Chúng tôi xử lý thông tin cá nhân của quý khách dựa trên một hoặc một số cơ sở pháp lý sau đây:
