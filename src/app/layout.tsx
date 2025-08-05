@@ -9,6 +9,7 @@ import PromotionSection from "@/components/layout/PromotionSection"
 import FloatingContact from "@/components/layout/FloatingContact"
 import ContactForm from "@/components/layout/ContactForm"
 import { headers } from "next/headers"
+import { FacebookPixelScript } from "@/components/ui/facebook-pixel-script"
 
 const fontSans = Noto_Sans({
   subsets: ['latin'],
@@ -35,10 +36,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
+  const facebookPixelId = process.env.FACEBOOK_PIXEL_ID || ''
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="google-site-verification" content="aIXH3AZmTELlta_3WREWmdvuhGQvactgPT5f2JRhSmM" />
+        <FacebookPixelScript pixelId={facebookPixelId} />
       </head>
       <body
         className={cn(

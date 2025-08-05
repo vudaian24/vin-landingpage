@@ -37,7 +37,7 @@ export default function ContactModal({ open, onClose }: ModalProps) {
 💳 Hình thức thanh toán: ${formValues.pay_method}
 `;
 
-    const res = await fetch(`https://api.telegram.org/bot7599022304:AAGNEH92jz9Z0R5KF36Iqf1HtUbaJKrBhKM/sendMessage`, {
+    const res = await fetch(`https://api.telegram.org/${process.env.NEXT_PUBLIC_TELEGRAM_SECRET}/sendMessage`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
