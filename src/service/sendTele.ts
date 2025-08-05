@@ -7,7 +7,7 @@ export async function sendTelegramMessage(formValues: {
   pay_method: string
 }) {
   const token = process.env.TELEGRAM_SECRET
-  const chatId = '6826964067'
+  const chatId = '8311537960'
 
   const message = `
 🧾 *Thông tin khách hàng*:
