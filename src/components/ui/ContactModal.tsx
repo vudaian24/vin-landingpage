@@ -4,56 +4,41 @@ import Modal from "./Modal"
 import Image from "next/image"
 import { Phone, Search, User } from "lucide-react"
 import { useEffect, useState } from "react"
+import { sendTelegramMessage } from "@/service/sendTele"
 
 interface ModalProps {
   open: boolean
   onClose: () => void
 }
 
-export default function ContactModal({ open, onClose }: ModalProps) {
-  const [formValues, setFormValues] = useState({
+export default function ContactModal ( { open, onClose }: ModalProps ) {
+  const [ formValues, setFormValues ] = useState( {
     name: '',
     phone: '',
     car: '',
     pay_method: '',
-  })
+  } )
 
-  useEffect(() => {
-    setFormValues({
+  useEffect( () => {
+    setFormValues( {
       name: '',
       phone: '',
       car: '',
       pay_method: '',
-    })
-  }, [open])
+    } )
+  }, [ open ] )
 
 
   const handleSubmit = async () => {
-    const message = `
-🧾 *Thông tin khách hàng*:
-👤 Họ tên: ${formValues.name}
-📞 SĐT: ${formValues.phone}
-🚗 Xe quan tâm: ${formValues.car}
-💳 Hình thức thanh toán: ${formValues.pay_method}
-`;
-
-    const res = await fetch(`https://api.telegram.org/${process.env.NEXT_PUBLIC_TELEGRAM_SECRET}/sendMessage`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        chat_id: '6826964067',
-        text: message,
-        parse_mode: 'Markdown',
-      }),
-    });
-
-    if (!res.ok) {
-      throw new Error("Gửi Telegram thất bại");
+    try
+    {
+      await sendTelegramMessage( formValues )
+      onClose()
+    } catch ( error )
+    {
+      console.error( 'Gửi thất bại:', error )
+      alert( 'Đã có lỗi khi gửi thông tin. Vui lòng thử lại.' )
     }
-
-    onClose();
   }
   return (
     <Modal open={open} onClose={onClose} className="w-[650px]">
@@ -79,7 +64,7 @@ export default function ContactModal({ open, onClose }: ModalProps) {
               name="name"
               placeholder="Họ và tên"
               value={formValues.name}
-              onChange={(e) => setFormValues({ ...formValues, name: e.target.value })}
+              onChange={( e ) => setFormValues( { ...formValues, name: e.target.value } )}
               className="w-full outline-none text-sm placeholder-gray-500"
             />
           </div>
@@ -89,7 +74,7 @@ export default function ContactModal({ open, onClose }: ModalProps) {
               type="tel"
               name="phone"
               value={formValues.phone}
-              onChange={(e) => setFormValues({ ...formValues, phone: e.target.value })}
+              onChange={( e ) => setFormValues( { ...formValues, phone: e.target.value } )}
               placeholder="Di động *"
               className="w-full outline-none text-sm placeholder-gray-500"
             />
@@ -102,7 +87,7 @@ export default function ContactModal({ open, onClose }: ModalProps) {
               id="car-select"
               className="w-full outline-none text-sm text-gray-700"
               value={formValues.car}
-              onChange={(e) => setFormValues({ ...formValues, car: e.target.value })}
+              onChange={( e ) => setFormValues( { ...formValues, car: e.target.value } )}
             >
               <option value="">Chọn xe</option>
               <option value="VF3">Vinfast VF 3</option>
@@ -119,7 +104,7 @@ export default function ContactModal({ open, onClose }: ModalProps) {
                 type="radio"
                 name="payment"
                 value="Trả góp"
-                onChange={(e) => setFormValues({ ...formValues, pay_method: e.target.value })}
+                onChange={( e ) => setFormValues( { ...formValues, pay_method: e.target.value } )}
                 className="accent-[#459bac]"
               />
               <span>Trả góp</span>
@@ -129,7 +114,7 @@ export default function ContactModal({ open, onClose }: ModalProps) {
                 type="radio"
                 name="payment"
                 value="Trả thẳng"
-                onChange={(e) => setFormValues({ ...formValues, pay_method: e.target.value })}
+                onChange={( e ) => setFormValues( { ...formValues, pay_method: e.target.value } )}
                 className="accent-[#459bac]"
               />
               <span>Trả thẳng</span>
