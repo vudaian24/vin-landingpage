@@ -47,6 +47,7 @@ export default function CarList() {
                   label="XEM XE"
                   variant="outline"
                   icon={<Menu size={14} />}
+                  onClick={() => setIsOpen(false)}
                   className="text-[12px] px-3 py-1 flex-1 sm:flex-none w-full sm:w-auto"
                   href={car.link}
                 />

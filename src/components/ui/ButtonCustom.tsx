@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 import { ReactNode } from 'react';
 
 type ButtonCustomProps = {
@@ -29,10 +30,10 @@ export default function ButtonCustom({
 
   if (href) {
     return (
-      <a href={href} className={classes}>
+      <Link href={href} className={classes}>
         {icon && <span>{icon}</span>}
         {label}
-      </a>
+      </Link>
     );
   }
 
