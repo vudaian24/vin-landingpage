@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className='flex flex-col items-center md:flex-row md:items-center justify-between px-4 py-6 text-gray-400'>
+        <div className='flex flex-col items-center md:flex-row md:items-center justify-between py-6 text-gray-400'>
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <div className="flex flex-wrap gap-x-4 gap-y-2 mb-2 md:mb-0 text-sm border-b border-gray-700 pb-2">
               <Link className="hover:text-white transition-colors duration-200" href="/">TRANG CHỦ</Link>

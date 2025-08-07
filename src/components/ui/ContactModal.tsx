@@ -11,38 +11,36 @@ interface ModalProps {
   onClose: () => void
 }
 
-export default function ContactModal ( { open, onClose }: ModalProps ) {
-  const [ formValues, setFormValues ] = useState( {
+export default function ContactModal({ open, onClose }: ModalProps) {
+  const [formValues, setFormValues] = useState({
     name: '',
     phone: '',
     car: '',
     pay_method: '',
-  } )
+  })
 
-  useEffect( () => {
-    setFormValues( {
+  useEffect(() => {
+    setFormValues({
       name: '',
       phone: '',
       car: '',
       pay_method: '',
-    } )
-  }, [ open ] )
+    })
+  }, [open])
 
 
   const handleSubmit = async () => {
-    try
-    {
-      await sendTelegramMessage( formValues )
+    try {
+      await sendTelegramMessage(formValues)
       onClose()
-    } catch ( error )
-    {
-      console.error( 'Gửi thất bại:', error )
-      alert( 'Đã có lỗi khi gửi thông tin. Vui lòng thử lại.' )
+    } catch (error) {
+      console.error('Gửi thất bại:', error)
+      alert('Đã có lỗi khi gửi thông tin. Vui lòng thử lại.')
     }
   }
   return (
-    <Modal open={open} onClose={onClose} className="w-[650px]">
-      <div className="flex items-center justify-center py-2">
+    <Modal open={open} onClose={onClose} className="max-w-[350px] md:max-w-[650px]">
+      <div className="flex items-center justify-center flex-col md:flex-row pt-8 pb-2 md:py-2">
         <div className="w-[305px] h-[305px] relative">
           <Image
             src="/images/banner-vinfast-vf-9-01.jpg"
@@ -64,7 +62,7 @@ export default function ContactModal ( { open, onClose }: ModalProps ) {
               name="name"
               placeholder="Họ và tên"
               value={formValues.name}
-              onChange={( e ) => setFormValues( { ...formValues, name: e.target.value } )}
+              onChange={(e) => setFormValues({ ...formValues, name: e.target.value })}
               className="w-full outline-none text-sm placeholder-gray-500"
             />
           </div>
@@ -74,7 +72,7 @@ export default function ContactModal ( { open, onClose }: ModalProps ) {
               type="tel"
               name="phone"
               value={formValues.phone}
-              onChange={( e ) => setFormValues( { ...formValues, phone: e.target.value } )}
+              onChange={(e) => setFormValues({ ...formValues, phone: e.target.value })}
               placeholder="Di động *"
               className="w-full outline-none text-sm placeholder-gray-500"
             />
@@ -87,7 +85,7 @@ export default function ContactModal ( { open, onClose }: ModalProps ) {
               id="car-select"
               className="w-full outline-none text-sm text-gray-700"
               value={formValues.car}
-              onChange={( e ) => setFormValues( { ...formValues, car: e.target.value } )}
+              onChange={(e) => setFormValues({ ...formValues, car: e.target.value })}
             >
               <option value="">Chọn xe</option>
               <option value="VF3">Vinfast VF 3</option>
@@ -104,7 +102,7 @@ export default function ContactModal ( { open, onClose }: ModalProps ) {
                 type="radio"
                 name="payment"
                 value="Trả góp"
-                onChange={( e ) => setFormValues( { ...formValues, pay_method: e.target.value } )}
+                onChange={(e) => setFormValues({ ...formValues, pay_method: e.target.value })}
                 className="accent-[#459bac]"
               />
               <span>Trả góp</span>
@@ -114,7 +112,7 @@ export default function ContactModal ( { open, onClose }: ModalProps ) {
                 type="radio"
                 name="payment"
                 value="Trả thẳng"
-                onChange={( e ) => setFormValues( { ...formValues, pay_method: e.target.value } )}
+                onChange={(e) => setFormValues({ ...formValues, pay_method: e.target.value })}
                 className="accent-[#459bac]"
               />
               <span>Trả thẳng</span>
